@@ -7,7 +7,7 @@ export default function HomeAbout() {
     <section
       className="w-full bg-lotus-bg pt-16 pb-5 px-6 md:px-12"
       data-aos="fade-up"
-      data-aos-duration="900"
+      data-aos-duration="500"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* ================= LEFT CONTENT ================= */}

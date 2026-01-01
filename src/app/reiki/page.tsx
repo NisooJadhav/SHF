@@ -1,9 +1,17 @@
-"use client";
-
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Reiki Healing & Attunements | Sacred Healing Foundation',
+  description:
+    'Explore Usui Reiki healing, attunements, and certifications. Experience energy healing for physical, emotional, and spiritual balance.',
+  alternates: {
+    canonical: 'https://www.sacredhealingfoundation.com/reiki',
+  },
+};
 
 export default function ReikiPage() {
-  const phoneNumber = "8793877913";
+  const phoneNumber = "918793877913";
   const message = encodeURIComponent(
     "Hi, I would like to book a consultation."
   );

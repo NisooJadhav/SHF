@@ -1,7 +1,16 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
+
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Healing Products Store | Sacred Healing Foundation',
+  description:
+    'Shop spiritual and healing products curated to support energy balance, protection, and holistic well-being.',
+  alternates: {
+    canonical: 'https://www.sacredhealingfoundation.com/store',
+  },
+};
 
 const storeData = [
   {

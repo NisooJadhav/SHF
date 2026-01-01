@@ -8,7 +8,7 @@ export default function MyGoal() {
     <section
       className="w-full bg-lotus-bg py-4"
       data-aos="fade-up"
-      data-aos-duration="900"
+      data-aos-duration="500"
     >
       <div className="mx-auto max-w-6xl">
         {/* ================= BOX ================= */}

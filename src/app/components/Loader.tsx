@@ -36,7 +36,7 @@ export default function Loader() {
     <div
       className="absolute inset-0 flex justify-center items-center bg-white z-100 opacity-90"
       data-aos="fade-in"
-      data-aos-duration="1500"
+      data-aos-duration="500"
       data-aos-easing="ease-out"
     >
       <div className="flex flex-col justify-center items-center">

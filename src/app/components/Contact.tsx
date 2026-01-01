@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Phone, Mail, Home } from "lucide-react";
 
-const WHATSAPP_NUMBER = "8793877913";
+const WHATSAPP_NUMBER = "918793877913";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -44,7 +44,7 @@ export default function Contact() {
       className="bg-lotus-bg py-4 pb-8 px-4"
       id="contact"
       data-aos="fade-up"
-      data-aos-duration="900"
+      data-aos-duration="500"
     >
       <div className="mx-auto max-w-6xl rounded-3xl bg-lotus-section shadow-sacred p-6 md:p-12 grid lg:grid-cols-2 gap-8 md:gap-10">
         {/* ================= LEFT INFO ================= */}

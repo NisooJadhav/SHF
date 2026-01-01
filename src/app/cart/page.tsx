@@ -5,7 +5,7 @@ import { useCart } from "../context/CartContext";
 import Image from "next/image";
 
 export default function CartPage() {
-  const WHATSAPP_NUMBER = "8793877913";
+  const WHATSAPP_NUMBER = "918793877913";
 
   const { items, updateQuantity, removeFromCart, total, clear } = useCart();
 
@@ -37,7 +37,7 @@ Please confirm the order.
       <h1
         className="text-3xl font-bold mb-6"
         data-aos="fade-up"
-        data-aos-duration="700"
+        data-aos-duration="500"
       >
         Your Cart
       </h1>

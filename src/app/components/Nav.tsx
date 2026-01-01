@@ -22,7 +22,6 @@ const navLinks = [
       { name: "Reiki Grandmaster (Level 1 to GM)", href: "/reiki/#complete" },
       { name: "Money Reiki", href: "/reiki/#money" },
       { name: "Karuna Reiki", href: "/reiki/#karuna" },
-      { name: "Ancestral Family Reiki Healing", href: "/reiki/#ancestral" },
     ],
     image: "/reiki.png",
     description: "Energy healing modalities",
@@ -121,7 +120,7 @@ const navLinks = [
 ] as const;
 
 export default function Navbar() {
-  const phoneNumber = "8793877913";
+  const phoneNumber = "918793877913";
   const message = encodeURIComponent(
     "Hi, I would like to book a consultation."
   );

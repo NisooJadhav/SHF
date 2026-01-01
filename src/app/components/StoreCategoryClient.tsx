@@ -76,9 +76,9 @@ const storeCategories: StoreCategory[] = [
       "/products/bracelet-4.jpg",
       "/products/pendant-1.jpg",
       "/products/pendant-2.jpeg",
-      "/products/pendant-3.jpeg",
-      "/products/pendant-4.jpeg",
-      "/products/pendant-5.jpeg",
+      "/products/pendant-3.jpg",
+      "/products/pendant-4.jpg",
+      "/products/pendant-5.jpg",
     ],
   },
 
@@ -163,7 +163,7 @@ const storeCategories: StoreCategory[] = [
       "/products/crystal-tower-1.jpeg",
       "/products/crystal-tower-2.jpeg",
       "/products/crystal-balls.jpeg",
-      "/products/crystal-wand.jpeg",
+      "/products/crystal-wand.jpg",
     ],
   },
 
@@ -180,7 +180,7 @@ const storeCategories: StoreCategory[] = [
       "Reiki charged and intention activated.",
       "Especially beneficial for healers and practitioners.",
     ],
-    images: ["/products/pyramid-1.jpeg", "/products/pyramid-2.jpeg"],
+    images: ["/products/pyramid-1.jpeg", "/products/pyramid-2.jpg"],
   },
 
   {
@@ -375,8 +375,6 @@ export default function StoreCategoryClient({ slug }: Props) {
                         ? "ring-4 ring-purple-500"
                         : "ring-2 ring-gray-200"
                     }`}
-                    data-aos="fade-up"
-                    data-aos-delay={i * 80}
                   >
                     <Image src={img} alt="" fill className="object-cover" />
                   </button>
@@ -450,7 +448,7 @@ export default function StoreCategoryClient({ slug }: Props) {
                 className="cursor-pointer transition-all ease-in-out hover:scale-105 px-6 py-4 border-2 border-lotus-pink text-lotus-purple rounded-xl font-semibold hover:bg-lotus-purple/10"
                 onClick={() => {
                   const message = `I would like to inquire about this product. Here's the link: ${window.location.href}`;
-                  const WHATSAPP_NUMBER = "8793877913";
+                  const WHATSAPP_NUMBER = "918793877913";
                   window.open(
                     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
                       message

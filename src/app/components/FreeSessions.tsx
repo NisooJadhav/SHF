@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const phoneNumber = "8793877913";
+const phoneNumber = "918793877913";
 
 const sessions = [
   {
@@ -29,7 +29,7 @@ export default function FreeSessions() {
     <section
       className="w-full bg-lotus-bg px-6 md:px-12 mt-10 pb-5"
       data-aos="fade-up"
-      data-aos-duration="900"
+      data-aos-duration="500"
     >
       <div className="max-w-7xl mx-auto">
         {/* ================= TITLE ================= */}

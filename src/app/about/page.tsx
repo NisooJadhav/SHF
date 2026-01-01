@@ -37,7 +37,7 @@ export default function AboutPage() {
       <div
         className="w-full flex justify-center mt-12"
         data-aos="zoom-in"
-        data-aos-duration="900"
+        data-aos-duration="500"
       >
         <Image
           src="/about.png"

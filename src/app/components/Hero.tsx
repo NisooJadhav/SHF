@@ -58,7 +58,7 @@ export default function HeroSection() {
       <div className="relative z-20 flex flex-col items-center justify-end h-full">
         {/* Hero Image */}
         <Image
-          src="/hero.png"
+          src="/hero-2-1.png"
           alt="Hero"
           width={500}
           height={500}
@@ -74,7 +74,7 @@ export default function HeroSection() {
           className="z-50 w-screen bg-white flex justify-center"
           data-aos="fade-up"
           data-aos-delay="300"
-          data-aos-duration="800"
+          data-aos-duration="500"
         >
           <p className="my-4 text-center text-3xl md:text-6xl font-medium text-pink-800 tracking-wide">
             <b>जहाँ समर्पण है, वहीं उपचार है।</b>

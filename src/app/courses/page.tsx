@@ -1,7 +1,16 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
+
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Healing & Reiki Courses | Sacred Healing Foundation',
+  description:
+    'Enroll in certified Reiki and spiritual healing courses designed for beginners and advanced practitioners.',
+  alternates: {
+    canonical: 'https://www.sacredhealingfoundation.com/courses',
+  },
+};
 
 type Course = {
   id: number;

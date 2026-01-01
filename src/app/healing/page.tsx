@@ -1,9 +1,17 @@
-"use client";
-
 import Link from "next/link";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Holistic Healing Therapies | Sacred Healing Foundation',
+  description:
+    'Discover holistic healing therapies including crystal healing, EFT, Akashic Records, and spiritual healing for mind, body, and soul.',
+  alternates: {
+    canonical: 'https://www.sacredhealingfoundation.com/healing',
+  },
+};
 
 export default function HealingPage() {
-  const phoneNumber = "8793877913";
+  const phoneNumber = "918793877913";
   const message = encodeURIComponent(
     "Hi, I would like to book a healing session."
   );

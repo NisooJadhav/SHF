@@ -246,7 +246,7 @@ export default async function CourseDetailPage({
   const course = courses.find((c) => c.slug === slug);
   if (!course) notFound();
 
-  const phoneNumber = "8793877913";
+  const phoneNumber = "918793877913";
   const message = encodeURIComponent(
     `Hi, I would like to know more about the ${course.title} course.`
   );
