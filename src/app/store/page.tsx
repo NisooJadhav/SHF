@@ -133,7 +133,7 @@ export default function StorePage() {
                   src={cat.images[0]}
                   alt={cat.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition"
+                  className="object-contain group-hover:scale-105 transition"
                 />
               </div>
 

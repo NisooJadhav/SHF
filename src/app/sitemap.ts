@@ -10,9 +10,10 @@ async function getCourseSlugs(): Promise<string[]> {
     'karuna-reiki',
     'money-reiki',
     'angel-therapy',
-    'tarot-card-reading',
+    'rider-waite-tarot-card',
+    'osho-zen-tarot-card',
     'crystal-healing',
-    'eft',
+    'eft',  
     'reiki-grand-mastership',
   ];
 }

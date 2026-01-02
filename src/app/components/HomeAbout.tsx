@@ -11,6 +11,26 @@ export default function HomeAbout() {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         {/* ================= LEFT CONTENT ================= */}
+        <div
+          className="relative flex justify-center md:justify-center"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+        >
+          <div
+            className="relative w-[280px] h-[360px] sm:w-[320px] sm:h-[420px] md:w-[360px] md:h-[480px] 
+                       rounded-3xl overflow-hidden shadow-sacred bg-lotus-gold/30"
+          >
+            <Image
+              src="/homeabout.png"
+              alt="Poonam Thore - Reiki Expert"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        {/* ================= RIGHT CONTENT ================= */}
         <div className="space-y-6">
           <h2
             className="text-center text-3xl md:text-4xl font-serif text-lotus-purple leading-tight"
@@ -45,26 +65,6 @@ export default function HomeAbout() {
             vibration, and live a balanced, peaceful, and abundant life through
             ethical and conscious spiritual practices.
           </p>
-        </div>
-
-        {/* ================= RIGHT IMAGE ================= */}
-        <div
-          className="relative flex justify-center md:justify-center"
-          data-aos="zoom-in"
-          data-aos-delay="150"
-        >
-          <div
-            className="relative w-[280px] h-[360px] sm:w-[320px] sm:h-[420px] md:w-[360px] md:h-[480px] 
-                       rounded-3xl overflow-hidden shadow-sacred bg-lotus-gold/30"
-          >
-            <Image
-              src="/homeabout.png"
-              alt="Poonam Thore - Reiki Expert"
-              fill
-              priority
-              className="object-cover"
-            />
-          </div>
         </div>
       </div>
     </section>

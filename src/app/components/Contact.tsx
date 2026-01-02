@@ -199,9 +199,10 @@ export default function Contact() {
               className="py-2 pl-2 pr-2 border border-lotus-gold rounded-full w-full"
             >
               <option value="">Select an option</option>
-              <option>Meet in Person</option>
-              <option>Phone Call</option>
-              <option>Zoom Call</option>
+              <option>Voice Call</option>
+              <option>WhatsApp Chat</option>
+              <option>Online Video Call (Zoom / Google Meet)</option>
+              <option>In-Person Meeting</option>
             </select>
           </div>
 

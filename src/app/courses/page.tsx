@@ -47,6 +47,14 @@ const coursesData: Course[] = [
   },
   {
     id: 4,
+    title: "Reiki Grand Mastership",
+    slug: "reiki-grand-mastership",
+    shortDesc:
+      "Highest level of Reiki with lineage, mastery, and discipline.",
+    image: "/courses/reiki-grand-mastership.png",
+  },
+  {
+    id: 5,
     title: "Karuna Reiki",
     slug: "karuna-reiki",
     shortDesc:
@@ -54,7 +62,7 @@ const coursesData: Course[] = [
     image: "/courses/karuna-reiki.png",
   },
   {
-    id: 5,
+    id: 6,
     title: "Money Reiki",
     slug: "money-reiki",
     shortDesc:
@@ -62,7 +70,7 @@ const coursesData: Course[] = [
     image: "/courses/money-reiki.png",
   },
   {
-    id: 6,
+    id: 7,
     title: "Angel Therapy",
     slug: "angel-therapy",
     shortDesc:
@@ -70,15 +78,23 @@ const coursesData: Course[] = [
     image: "/courses/angel-therapy.png",
   },
   {
-    id: 7,
-    title: "Tarot Card Reading",
-    slug: "tarot-card-reading",
+    id: 8,
+    title: "Rider Waite Tarot Card Reading",
+    slug: "rider-waite-tarot-card",
+    shortDesc:
+      "Learn tarot meanings, intuition, and ethical readings.",
+    image: "/courses/rider-waite-tarot-card.png",
+  },
+  {
+    id: 9,
+    title: "Osho Zen Tarot Card Reading",
+    slug: "osho-zen-tarot-card",
     shortDesc:
       "Learn tarot meanings, intuition, and ethical readings.",
     image: "/courses/tarot-card-reading.png",
   },
   {
-    id: 8,
+    id: 10,
     title: "Crystal Healing",
     slug: "crystal-healing",
     shortDesc:
@@ -86,21 +102,13 @@ const coursesData: Course[] = [
     image: "/courses/crystal-healing.png",
   },
   {
-    id: 9,
+    id: 11,
     title: "EFT (Emotional Freedom Technique)",
     slug: "eft",
     shortDesc:
       "Tapping therapy for stress, fears, and emotional release.",
     image: "/courses/eft.png",
-  },
-  {
-    id: 10,
-    title: "Reiki Grand Mastership",
-    slug: "reiki-grand-mastership",
-    shortDesc:
-      "Highest level of Reiki with lineage, mastery, and discipline.",
-    image: "/courses/reiki-grand-mastership.png",
-  },
+  },  
 ];
 
 export default function CoursesPage() {

@@ -1,46 +1,76 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
+import * as THREE from "three";
 import * as random from "maath/random";
 
-function StarField() {
-  const ref = useRef<any>(null);
-  // `maath/random.inSphere` returns a TypedArray (Float32Array or Float64Array depending
-  // on environment). Three.js / @react-three/fiber expects positions as Float32Array.
-  // We pass a Float32Array buffer and assert the returned typed array as Float32Array
-  // because maath writes into the provided buffer. This removes the TypedArray union
-  // ambiguity that causes overload incompatibilities (e.g. findLast) between Float32/64.
-  const sphere = random.inSphere(new Float32Array(5000 * 3), { radius: 1.5 }) as Float32Array;
+function Fireflies() {
+  const ref = useRef<THREE.Points>(null);
+
+  // Initial positions
+  const positions = useMemo(() => {
+    return random.inSphere(new Float32Array(150 * 3), {
+      radius: 1.8,
+    }) as Float32Array;
+  }, []);
+
+  // Individual velocity seeds for organic motion
+  const velocities = useMemo(() => {
+    const v = new Float32Array(150 * 3);
+    for (let i = 0; i < v.length; i++) {
+      v[i] = (Math.random() - 0.5) * 0.002;
+    }
+    return v;
+  }, []);
 
   useFrame((state, delta) => {
-    if (ref.current) {
-      ref.current.rotation.x -= delta / 10;
-      ref.current.rotation.y -= delta / 15;
+    if (!ref.current) return;
+
+    const pos = ref.current.geometry.attributes.position
+      .array as Float32Array;
+
+    for (let i = 0; i < pos.length; i += 3) {
+      pos[i] += velocities[i] * Math.sin(state.clock.elapsedTime + i);
+      pos[i + 1] += velocities[i + 1] * Math.cos(state.clock.elapsedTime + i);
+      pos[i + 2] += velocities[i + 2];
+
+      // Soft boundary wrap (keeps them floating around)
+      if (pos[i] > 2) pos[i] = -2;
+      if (pos[i] < -2) pos[i] = 2;
+      if (pos[i + 1] > 2) pos[i + 1] = -2;
+      if (pos[i + 1] < -2) pos[i + 1] = 2;
     }
+
+    ref.current.geometry.attributes.position.needsUpdate = true;
   });
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
-        <PointMaterial
-          transparent
-          color="#ffffff"
-          size={0.002}
-          sizeAttenuation={true}
-          depthWrite={false}
-        />
-      </Points>
-    </group>
+    <Points ref={ref} positions={positions} stride={3} frustumCulled={false}>
+      <PointMaterial
+        transparent
+        color="goldenrod"
+        size={0.015}
+        sizeAttenuation
+        depthWrite={false}
+        blending={THREE.AdditiveBlending}
+        opacity={0.9}
+      />
+    </Points>
   );
 }
 
 export default function StarsBackground() {
   return (
     <div className="absolute inset-0 z-0">
-      <Canvas camera={{ position: [0, 0, 1], fov: 75 }}>
-        <StarField />
+      <Canvas
+        camera={{ position: [0, 0, 2], fov: 75 }}
+        gl={{ antialias: true }}
+      >
+        {/* Ambient glow */}
+        <ambientLight intensity={0.6} />
+        <Fireflies />
       </Canvas>
     </div>
   );

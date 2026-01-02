@@ -14,7 +14,7 @@ export default function HeroSection() {
       {/* ================= BACKGROUND IMAGE ================= */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg-hero.png"
+          src="/bg-hero-4.png"
           alt="Background"
           fill
           priority
@@ -58,15 +58,15 @@ export default function HeroSection() {
       <div className="relative z-20 flex flex-col items-center justify-end h-full">
         {/* Hero Image */}
         <Image
-          src="/hero-2-1.png"
+          src="/hero-3.png"
           alt="Hero"
           width={500}
-          height={500}
+          height={600}
           priority
           data-aos="zoom-in"
           data-aos-duration="1200"
           data-aos-easing="ease-out-cubic"
-          className="drop-shadow-[0_0_70px_rgba(255,255,255,0.4)] sm:w-[320px] sm:h-[320px] md:w-[550px] md:h-[580px]"
+          className="drop-shadow-[0_0_70px_rgba(255,255,255,0.4)] sm:w-[320px] sm:h-auto md:w-[550px] md:h-auto"
         />
 
         {/* Quote */}

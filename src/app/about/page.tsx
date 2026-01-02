@@ -40,11 +40,15 @@ export default function AboutPage() {
         data-aos-duration="500"
       >
         <Image
-          src="/about.png"
+          src="/about-2.png"
           width={400}
           height={400}
           alt="Profile picture of Poonam Thore"
           className="
+            bg-gradient-to-b
+            from-green-400
+            via-blue-400
+            to-purple-400
             rounded-full
             w-[80vw]
             sm:w-[60vw]

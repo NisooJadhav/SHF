@@ -27,19 +27,67 @@ const navLinks = [
     description: "Energy healing modalities",
   },
   {
-    name: "Healing",
+    name: "Reiki & Energy Healing",
     href: "/healing",
     hasDropdown: true,
     dropdownItems: [
-      { name: "Crystal Healing Therapy", href: "/healing/#crystal" },
-      { name: "EFT Therapy", href: "/healing/#eft" },
-      { name: "Akashic Record", href: "/healing/#akashic" },
-      { name: "Healing with RHF", href: "/healing/#rhf" },
-      { name: "What We Cure", href: "/healing/#cure" },
-      { name: "How We Cure", href: "/healing/#process" },
+      {
+        name: "Reiki Healing",
+        href: "/healing/#reiki",
+      },
+      {
+        name: "Advanced & Psychic Healing",
+        href: "/healing/#advanced-psychic",
+      },
+      {
+        name: "Crystal & Vibrational Healing",
+        href: "/healing/#crystal",
+      },
+      {
+        name: "Spiritual & Angelic Healing",
+        href: "/healing/#spiritual",
+      },
+      {
+        name: "Mind & Emotional Healing",
+        href: "/healing/#mind",
+      },
+      {
+        name: "Akashic Records Healing",
+        href: "/healing/#akashic",
+      },
     ],
     image: "/healing.png",
-    description: "Holistic healing therapies",
+    description: "Holistic healing therapies for mind, body & soul",
+  },
+  {
+    name: "Healing Guide",
+    href: "/healing-guide",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        name: "What We Heal",
+        href: "/healing-guide/#guide-what-we-heal",
+      },
+      {
+        name: "How We Heal",
+        href: "/healing-guide/#guide-how-we-heal",
+      },
+      {
+        name: "Healing Process",
+        href: "/healing-guide/#guide-healing-process",
+      },
+      {
+        name: "How Healing Works",
+        href: "/healing-guide/#guide-how-healing-works",
+      },
+      {
+        name: "Healing Ethics",
+        href: "/healing-guide/#guide-ethics",
+      },
+    ],
+    image: "/healing-guide.png",
+    description:
+      "Understand our way of healing",
   },
   {
     name: "Courses",
@@ -59,6 +107,10 @@ const navLinks = [
         href: "/courses/usui-reiki-master",
       },
       {
+        name: "Reiki Grand Mastership",
+        href: "/courses/reiki-grand-mastership",
+      },
+      {
         name: "Karuna Reiki",
         href: "/courses/karuna-reiki",
       },
@@ -71,8 +123,12 @@ const navLinks = [
         href: "/courses/angel-therapy",
       },
       {
-        name: "Tarot Card Reading",
-        href: "/courses/tarot-card-reading",
+        name: "Rider Waite Tarot Card",
+        href: "/courses/rider-waite-tarot-card",
+      },
+      {
+        name: "Osho Zen Tarot Card",
+        href: "/courses/osho-zen-tarot-card",
       },
       {
         name: "Crystal Healing",
@@ -81,10 +137,6 @@ const navLinks = [
       {
         name: "EFT (Emotional Freedom Technique)",
         href: "/courses/eft",
-      },
-      {
-        name: "Reiki Grand Mastership",
-        href: "/courses/reiki-grand-mastership",
       },
     ],
     image: "/courses.png",
@@ -97,7 +149,7 @@ const navLinks = [
     dropdownItems: [
       { name: "About Poonam Thore", href: "/about" },
       { name: "Testimonials", href: "/#testimonials" },
-      { name: "Certifications", href: "/about/#certifications" }
+      { name: "Certifications", href: "/about/#certifications" },
     ],
     image: "/homeabout.png",
     description: "Reiki Grand Master",
@@ -140,26 +192,34 @@ export default function Navbar() {
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8">
-            ॥ श्री कृष्ण शरणम् ॥
+          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-400">॥ श्री कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-500">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8">
-            ॥ श्री कृष्ण शरणम् ॥
+          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-400">॥ श्री कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-500">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8">
-            ॥ श्री कृष्ण शरणम् ॥
+          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-400">॥ श्री कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-500">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8">
-            ॥ श्री कृष्ण शरणम् ॥
+          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-400">॥ श्री कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-500">शरणम् ॥</span>
           </span>
         </Marquee>
       </div>
