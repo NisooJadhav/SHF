@@ -11,14 +11,14 @@ function Fireflies() {
 
   // Initial positions
   const positions = useMemo(() => {
-    return random.inSphere(new Float32Array(150 * 3), {
+    return random.inSphere(new Float32Array(300 * 3), {
       radius: 1.8,
     }) as Float32Array;
   }, []);
 
   // Individual velocity seeds for organic motion
   const velocities = useMemo(() => {
-    const v = new Float32Array(150 * 3);
+    const v = new Float32Array(300 * 3);
     for (let i = 0; i < v.length; i++) {
       v[i] = (Math.random() - 0.5) * 0.002;
     }
@@ -50,12 +50,11 @@ function Fireflies() {
     <Points ref={ref} positions={positions} stride={3} frustumCulled={false}>
       <PointMaterial
         transparent
-        color="goldenrod"
-        size={0.015}
+        color="white"
+        size={0.020}
         sizeAttenuation
         depthWrite={false}
         blending={THREE.AdditiveBlending}
-        opacity={0.9}
       />
     </Points>
   );

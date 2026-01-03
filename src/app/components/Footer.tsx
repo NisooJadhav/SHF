@@ -72,7 +72,7 @@ export default function Footer() {
           <div className="basis-full lg:basis-[28%] space-y-6">
             <Link href="/" className="inline-block">
               <div className="relative h-16 w-56">
-                <Image src="/logo.png" alt="Sacred Healing Foundation" fill />
+                <Image src="/logo.webp" alt="Sacred Healing Foundation" fill />
               </div>
             </Link>
 
@@ -96,9 +96,13 @@ export default function Footer() {
               </a>
             </div>
 
-            <div className="text-yellow-300 font-semibold">
-              ॥ श्री कृष्ण शरणम् ॥
-            </div>
+            <span className="text-sm font-semibold bg-white pb-2 pt-1 px-2 rounded-full">
+            <span className="text-green-700">॥ श्री</span>
+            &nbsp;
+            <span className="text-blue-700">कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-700">शरणम् ॥</span>
+          </span>
           </div>
 
           {/* LINK SECTIONS */}

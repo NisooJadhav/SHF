@@ -21,7 +21,7 @@ export default function HomeAbout() {
                        rounded-3xl overflow-hidden shadow-sacred bg-lotus-gold/30"
           >
             <Image
-              src="/homeabout.png"
+              src="/homeabout.webp"
               alt="Poonam Thore - Reiki Expert"
               fill
               priority

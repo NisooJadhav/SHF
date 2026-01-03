@@ -40,7 +40,7 @@ export default function AboutPage() {
         data-aos-duration="500"
       >
         <Image
-          src="/about-2.png"
+          src="/about.webp"
           width={400}
           height={400}
           alt="Profile picture of Poonam Thore"

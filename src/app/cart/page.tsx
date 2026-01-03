@@ -65,7 +65,7 @@ Please confirm the order.
             {items.map((it, idx) => (
               <div
                 key={it.id}
-                className="flex items-center gap-4 py-3 border-b last:border-b-0 bg-white rounded-lg shadow-sm p-3"
+                className="flex items-center gap-4 py-3 border-b border-gray-400 last:border-b-0 bg-white rounded-lg shadow-sm p-3"
                 data-aos="fade-up"
                 data-aos-delay={idx * 80}
               >
@@ -75,7 +75,7 @@ Please confirm the order.
                       src={it.image}
                       alt={it.title}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                     />
                   )}
                 </div>

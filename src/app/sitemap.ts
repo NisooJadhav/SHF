@@ -23,7 +23,6 @@ async function getStoreSlugs(): Promise<string[]> {
     'raw-crystals',
     'crystal-bracelets-pendants',
     'angel-crystals',
-    'crystal-angels',
     'pyrite-wealth-crystals',
     'silver-crystal-pendants',
     'crystal-towers-balls-wands',

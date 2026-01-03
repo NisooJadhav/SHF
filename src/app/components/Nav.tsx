@@ -7,11 +7,6 @@ import { useCart } from "../context/CartContext";
 
 const navLinks = [
   {
-    name: "Home",
-    href: "/",
-    hasDropdown: false,
-  },
-  {
     name: "Reiki",
     href: "/reiki",
     hasDropdown: true,
@@ -23,7 +18,7 @@ const navLinks = [
       { name: "Money Reiki", href: "/reiki/#money" },
       { name: "Karuna Reiki", href: "/reiki/#karuna" },
     ],
-    image: "/reiki.png",
+    image: "/reiki.webp",
     description: "Energy healing modalities",
   },
   {
@@ -56,7 +51,7 @@ const navLinks = [
         href: "/healing/#akashic",
       },
     ],
-    image: "/healing.png",
+    image: "/healing.webp",
     description: "Holistic healing therapies for mind, body & soul",
   },
   {
@@ -85,7 +80,7 @@ const navLinks = [
         href: "/healing-guide/#guide-ethics",
       },
     ],
-    image: "/healing-guide.png",
+    image: "/healing-guide.webp",
     description:
       "Understand our way of healing",
   },
@@ -139,7 +134,7 @@ const navLinks = [
         href: "/courses/eft",
       },
     ],
-    image: "/courses.png",
+    image: "/courses.webp",
     description: "Certified Spiritual & Healing Courses",
   },
   {
@@ -151,7 +146,7 @@ const navLinks = [
       { name: "Testimonials", href: "/#testimonials" },
       { name: "Certifications", href: "/about/#certifications" },
     ],
-    image: "/homeabout.png",
+    image: "/homeabout.webp",
     description: "Reiki Grand Master",
   },
   {
@@ -165,7 +160,7 @@ const navLinks = [
     hasDropdown: false,
   },
   {
-    name: "Cart",
+    name: "🛒",
     href: "/cart",
     hasDropdown: false,
   },
@@ -192,34 +187,42 @@ export default function Navbar() {
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-400">॥ श्री कृष्ण</span>
+          <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-700">॥ श्री</span>
             &nbsp;
-            <span className="text-purple-500">शरणम् ॥</span>
+            <span className="text-blue-700">कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-700">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-400">॥ श्री कृष्ण</span>
+          <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-700">॥ श्री</span>
             &nbsp;
-            <span className="text-purple-500">शरणम् ॥</span>
+            <span className="text-blue-700">कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-700">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-400">॥ श्री कृष्ण</span>
+          <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-700">॥ श्री</span>
             &nbsp;
-            <span className="text-purple-500">शरणम् ॥</span>
+            <span className="text-blue-700">कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-700">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
-          <span className="text-yellow-200 text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-400">॥ श्री कृष्ण</span>
+          <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
+            <span className="text-green-700">॥ श्री</span>
             &nbsp;
-            <span className="text-purple-500">शरणम् ॥</span>
+            <span className="text-blue-700">कृष्ण</span>
+            &nbsp;
+            <span className="text-purple-700">शरणम् ॥</span>
           </span>
         </Marquee>
       </div>
@@ -235,7 +238,7 @@ export default function Navbar() {
             >
               <div className="relative h-14 w-48 sm:h-16 sm:w-56">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   alt="Sacred Healing Foundation"
                   fill
                   className="object-contain"
@@ -245,7 +248,7 @@ export default function Navbar() {
             </Link>
 
             {/* CENTER: LINKS (DESKTOP) */}
-            <div className="hidden lg:flex items-center gap-8 xl:gap-10">
+            <div className="hidden md:flex items-center gap-2 2xl:gap-8">
               {navLinks.map((link) => (
                 <div
                   key={link.name}
@@ -278,8 +281,8 @@ export default function Navbar() {
                         />
                       </svg>
                     )}
-                    {link.name === "Cart" && (
-                      <span className="ml-2 inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-semibold bg-[var(--color-lotus-gold)] text-white">
+                    {link.name === "🛒" && (
+                      <span className="inline-flex items-center justify-center px-1 py-0.5 rounded-full text-xs font-semibold bg-[var(--color-lotus-gold)] text-white">
                         {items.length}
                       </span>
                     )}
@@ -382,12 +385,12 @@ export default function Navbar() {
                       <Link
                         href={link.href}
                         onClick={() => !link.hasDropdown && setOpen(false)}
-                        className="flex-1 text-gray-700 font-semibold hover:text-purple-600 transition px-4 py-3"
+                        className="flex-1 text-gray-700 font-semibold hover:text-purple-600 transition py-3 gap-0"
                       >
                         {link.name}
-                        {link.name === "Cart" && (
-                          <span className="ml-2 inline-flex items-center justify-center px-2 py-0.5 rounded-full text-xs font-semibold bg-[var(--color-lotus-gold)] text-white">
-                            {items.length}
+                        {link.name === "🛒" && (
+                          <span className="ml-2 inline-flex items-center justify-center px-1 py-0.5 rounded-full text-xs font-semibold bg-[var(--color-lotus-gold)] text-white">
+                            Cart {items.length}
                           </span>
                         )}
                       </Link>

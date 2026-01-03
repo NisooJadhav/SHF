@@ -41,7 +41,7 @@ export default function Loader() {
     >
       <div className="flex flex-col justify-center items-center">
         <Image
-          src="/logo.png"
+          src="/logo.webp"
           alt="Loading..."
           width={500}
           height={100}

@@ -48,6 +48,7 @@ const storeCategories: StoreCategory[] = [
       "Prices vary based on crystal type, size, and weight.",
     ],
     images: [
+      "/products/crystal-0.webp",
       "/products/crystal-1.jpg",
       "/products/crystal-2.jpg",
       "/products/crystal-3.jpg",
@@ -70,6 +71,7 @@ const storeCategories: StoreCategory[] = [
       "Prices vary based on crystal type and design.",
     ],
     images: [
+      "/products/bracelet-0.webp",
       "/products/bracelet-1.jpeg",
       "/products/bracelet-2.jpg",
       "/products/bracelet-3.jpg",
@@ -95,22 +97,11 @@ const storeCategories: StoreCategory[] = [
       "Ideal for meditation, prayer, and spiritual practices.",
       "Prices vary based on crystal type and size.",
     ],
-    images: ["/products/angel-1.jpeg", "/products/angel-2.webp"],
-  },
-
-  {
-    title: "Crystal Angels",
-    slug: "crystal-angels",
-    basePrice: 100,
-    description: [
-      "Hand-carved crystal angel figurines crafted from natural crystals.",
-      "Provides divine protection, emotional comfort, and spiritual support.",
-      "Supports Reiki healing, meditation, and peaceful energy at home.",
-      "Promotes harmony, calmness, and positive vibrations.",
-      "Can be placed in home, altar, bedside, or carried for protection.",
-      "Reiki charged and intention activated.",
+    images: [
+      "/products/angels.webp",
+      "/products/angel-1.jpeg", 
+      "/products/angel-2.webp"
     ],
-    images: ["/products/angel-1.jpeg", "/products/angel-2.webp"],
   },
 
   {
@@ -126,7 +117,10 @@ const storeCategories: StoreCategory[] = [
       "Cleansed, Reiki charged, and abundance intention activated.",
       "Prices vary depending on size and weight.",
     ],
-    images: ["/products/pyrite.png"],
+    images: ["/products/pyrite.webp",
+      "/products/pyrite-2.jpeg",
+      "/products/pyrite-3.jpeg",
+    ],
   },
 
   {
@@ -142,8 +136,9 @@ const storeCategories: StoreCategory[] = [
       "Prices depend on crystal type and silver craftsmanship.",
     ],
     images: [
-      "/products/silver-crystal-1.jpeg",
-      "/products/silver-crystal-2.jpeg",
+      "/products/silver-pendant-1.jpg",
+      "/products/silver-pendant-2.jpeg",
+      "/products/silver-pendant-3.jpg",
     ],
   },
 
@@ -160,6 +155,7 @@ const storeCategories: StoreCategory[] = [
       "Each piece is unique in shape and energy.",
     ],
     images: [
+      "/products/crystal-tower-1.jpg",
       "/products/crystal-tower-1.jpeg",
       "/products/crystal-tower-2.jpeg",
       "/products/crystal-balls.jpeg",
@@ -195,7 +191,10 @@ const storeCategories: StoreCategory[] = [
       "Custom themes may be available.",
       "Handmade and energetically unique.",
     ],
-    images: ["/products/crystal-wish-grid-box.webp"],
+    images: [
+      "/products/crystal-wish-grid-box-0.jpg",
+      "/products/crystal-wish-grid-box.webp"
+    ],
   },
 
   {
@@ -210,7 +209,10 @@ const storeCategories: StoreCategory[] = [
       "No crystals required, simple to use.",
       "Ideal for gifting and daily intention practices.",
     ],
-    images: ["/products/wish-box.jpeg"],
+    images: [
+      "/products/wish-box-0.jpg",
+      "/products/wish-box.jpeg"
+    ],
   },
 
   {
@@ -224,7 +226,7 @@ const storeCategories: StoreCategory[] = [
       "Cleansed, Reiki charged, and abundance intention activated.",
       "Available as single or pair options.",
     ],
-    images: ["/products/feng-shui-ingot.png"],
+    images: ["/products/feng-shui-ingot.jpg"],
   },
 
   {
@@ -340,7 +342,7 @@ export default function StoreCategoryClient({ slug }: Props) {
                   src={category.images[currentImageIndex]}
                   alt={category.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   priority
                 />
 
@@ -376,7 +378,7 @@ export default function StoreCategoryClient({ slug }: Props) {
                         : "ring-2 ring-gray-200"
                     }`}
                   >
-                    <Image src={img} alt="" fill className="object-cover" />
+                    <Image src={img} alt="" fill className="object-contain" />
                   </button>
                 ))}
               </div>

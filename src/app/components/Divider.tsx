@@ -5,7 +5,7 @@ export default function Divider() {
     <div className="md:my-10 xs:my-2 flex w-full justify-center" data-aos="fade-in" data-aos-duration="500">
       <div className="relative w-24 sm:w-32 md:w-50">
         <Image
-          src="/divider.png"
+          src="/divider.webp"
           alt="Section divider"
           width={160}
           height={40}

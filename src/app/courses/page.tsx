@@ -27,7 +27,7 @@ const coursesData: Course[] = [
     slug: "usui-reiki-level-1",
     shortDesc:
       "Foundation course for self-healing, chakras, and Reiki principles.",
-    image: "/courses/usui-reiki-level-1.png",
+    image: "/courses/usui-reiki-level-1.webp",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const coursesData: Course[] = [
     slug: "usui-reiki-level-2",
     shortDesc:
       "Symbols, distance healing, emotional and mental healing techniques.",
-    image: "/courses/usui-reiki-level-2.png",
+    image: "/courses/usui-reiki-level-2.webp",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const coursesData: Course[] = [
     slug: "usui-reiki-master",
     shortDesc:
       "Master symbols, attunements, teaching, and advanced healing.",
-    image: "/courses/usui-reiki-master.png",
+    image: "/courses/usui-reiki-master.webp",
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const coursesData: Course[] = [
     slug: "reiki-grand-mastership",
     shortDesc:
       "Highest level of Reiki with lineage, mastery, and discipline.",
-    image: "/courses/reiki-grand-mastership.png",
+    image: "/courses/reiki-grand-mastership.webp",
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const coursesData: Course[] = [
     slug: "karuna-reiki",
     shortDesc:
       "Compassion-based healing for deep emotional and karmic wounds.",
-    image: "/courses/karuna-reiki.png",
+    image: "/courses/karuna-reiki.webp",
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ const coursesData: Course[] = [
     slug: "money-reiki",
     shortDesc:
       "Healing money blocks, abundance mindset, and prosperity energy.",
-    image: "/courses/money-reiki.png",
+    image: "/courses/money-reiki.webp",
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const coursesData: Course[] = [
     slug: "angel-therapy",
     shortDesc:
       "Connect with angels and archangels for healing and guidance.",
-    image: "/courses/angel-therapy.png",
+    image: "/courses/angel-therapy.webp",
   },
   {
     id: 8,
@@ -83,7 +83,7 @@ const coursesData: Course[] = [
     slug: "rider-waite-tarot-card",
     shortDesc:
       "Learn tarot meanings, intuition, and ethical readings.",
-    image: "/courses/rider-waite-tarot-card.png",
+    image: "/courses/rider-waite-tarot-card.webp",
   },
   {
     id: 9,
@@ -91,7 +91,7 @@ const coursesData: Course[] = [
     slug: "osho-zen-tarot-card",
     shortDesc:
       "Learn tarot meanings, intuition, and ethical readings.",
-    image: "/courses/tarot-card-reading.png",
+    image: "/courses/tarot-card-reading.webp",
   },
   {
     id: 10,
@@ -99,7 +99,7 @@ const coursesData: Course[] = [
     slug: "crystal-healing",
     shortDesc:
       "Crystals, chakras, grids, cleansing, and healing practices.",
-    image: "/courses/crystal-healing.png",
+    image: "/courses/crystal-healing.webp",
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ const coursesData: Course[] = [
     slug: "eft",
     shortDesc:
       "Tapping therapy for stress, fears, and emotional release.",
-    image: "/courses/eft.png",
+    image: "/courses/eft.webp",
   },  
 ];
 

@@ -36,7 +36,7 @@ export default function ProductCard({ product }: { product: Product }) {
             src={product.image}
             alt={product.title}
             fill
-            className="object-cover"
+            className="object-contain"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-purple-300">

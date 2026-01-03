@@ -10,7 +10,7 @@ const sessions = [
     id: 1,
     title: "Free Healing Session",
     subtitle: "Every Sunday Morning",
-    image: "/free-healing.jpeg",
+    image: "/free-healing.webp",
     message:
       "Hi, I would like to join the Free Healing Session held every Sunday morning. Please share more details.",
   },
@@ -18,7 +18,7 @@ const sessions = [
     id: 2,
     title: "Free Meditation Session",
     subtitle: "Every Saturday",
-    image: "/free-meditation.jpg",
+    image: "/free-meditation.webp",
     message:
       "Hi, I would like to join the Free Meditation Session held every Saturday. Please share more details.",
   },

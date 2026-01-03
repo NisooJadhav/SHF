@@ -21,7 +21,7 @@ const courses: Course[] = [
     slug: "usui-reiki-level-1",
     description:
       "A foundational Reiki course focused on self-healing, chakras, energy awareness, grounding, and ethical Reiki practice.",
-    image: "/courses/usui-reiki-level-1.png",
+    image: "/courses/usui-reiki-level-1.webp",
     syllabus: [
       "Introduction to Reiki",
       "What is Reiki Energy",
@@ -42,7 +42,7 @@ const courses: Course[] = [
     slug: "usui-reiki-level-2",
     description:
       "Advanced Reiki training introducing sacred symbols, distance healing, emotional healing, and energy clearing techniques.",
-    image: "/courses/usui-reiki-level-2.png",
+    image: "/courses/usui-reiki-level-2.webp",
     syllabus: [
       "Advanced Reiki Concepts",
       "Introduction to Reiki Symbols",
@@ -64,7 +64,7 @@ const courses: Course[] = [
     slug: "usui-reiki-master",
     description:
       "Master-level Reiki training focusing on deep spiritual healing, attunements, teaching, and advanced ethical responsibility.",
-    image: "/courses/usui-reiki-master.png",
+    image: "/courses/usui-reiki-master.webp",
     syllabus: [
       "Reiki Master Symbol – Dai Ko Myo",
       "Deep Spiritual Healing Practices",
@@ -83,7 +83,7 @@ const courses: Course[] = [
     slug: "karuna-reiki",
     description:
       "A compassion-based Reiki system designed for deep emotional healing, trauma release, and higher consciousness work.",
-    image: "/courses/karuna-reiki.png",
+    image: "/courses/karuna-reiki.webp",
     syllabus: [
       "Introduction to Karuna Reiki",
       "Difference Between Usui Reiki & Karuna Reiki",
@@ -101,7 +101,7 @@ const courses: Course[] = [
     slug: "money-reiki",
     description:
       "A specialized Reiki course focused on clearing money blocks, healing financial karma, and activating abundance energy.",
-    image: "/courses/money-reiki.png",
+    image: "/courses/money-reiki.webp",
     syllabus: [
       "Introduction to Money Reiki",
       "Understanding Energy Blocks Related to Money",
@@ -119,7 +119,7 @@ const courses: Course[] = [
     slug: "angel-therapy",
     description:
       "Learn to connect with angels and archangels for healing, protection, guidance, and spiritual support.",
-    image: "/courses/angel-therapy.png",
+    image: "/courses/angel-therapy.webp",
     syllabus: [
       "Introduction to Angels & Archangels",
       "Guardian Angels & Their Roles",
@@ -139,7 +139,7 @@ const courses: Course[] = [
     title: "Rider Waite Tarot Card Reading",
     slug: "rider-waite-tarot-card",
     description: "Learn tarot meanings, intuition, and ethical readings.",
-    image: "/courses/rider-waite-tarot-card.png",
+    image: "/courses/rider-waite-tarot-card.webp",
     syllabus: [
       "Introduction to Tarot, History of Tarot & Evolution of Rider Waite Tarot",
       "Tarot as Divination, Artistic Science & Tool of Awareness",
@@ -155,7 +155,7 @@ const courses: Course[] = [
     slug: "osho-zen-tarot-card",
     description:
       "A consciousness-based tarot course integrating Zen philosophy, intuition, and healing-oriented readings.",
-    image: "/courses/tarot-card-reading.png",
+    image: "/courses/osho-zen-tarot-card.webp",
     syllabus: [
       "Introduction to Tarot, History of Tarot & Evolution of Osho Zen Tarot",
       "Tarot as Divination, Artistic Science & Tool of Awareness",
@@ -185,7 +185,7 @@ const courses: Course[] = [
     slug: "crystal-healing",
     description:
       "A holistic crystal healing course covering crystal properties, chakra alignment, grids, and healing techniques.",
-    image: "/courses/crystal-healing.png",
+    image: "/courses/crystal-healing.webp",
     syllabus: [
       "Introduction to Crystal Healing",
       "How Crystals Work",
@@ -203,7 +203,7 @@ const courses: Course[] = [
     slug: "eft",
     description:
       "A practical tapping therapy course for emotional release, stress reduction, and mind–body healing.",
-    image: "/courses/eft.png",
+    image: "/courses/eft.webp",
     syllabus: [
       "Introduction to EFT",
       "What is Tapping Therapy",
@@ -220,7 +220,7 @@ const courses: Course[] = [
     slug: "reiki-grand-mastership",
     description:
       "The highest level of Reiki mastery focusing on lineage holding, advanced symbols, karmic healing, and spiritual discipline.",
-    image: "/courses/reiki-grand-mastership.png",
+    image: "/courses/reiki-grand-mastership.webp",
     syllabus: [
       "Reiki Grand Master Consciousness & Role",
       "Advanced Reiki Energy Science",

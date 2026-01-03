@@ -17,67 +17,61 @@ const storeData = [
     title: "Raw Crystals",
     slug: "raw-crystals",
     shortDesc: "Natural unpolished crystals for healing, protection & meditation.",
-    images: ["/products/crystal-1.jpg"],
+    images: ["/products/crystal-0.webp"],
   },
   {
     title: "Crystal Bracelets & Pendants",
     slug: "crystal-bracelets-pendants",
     shortDesc: "Wearable crystal energy for daily protection & balance.",
-    images: ["/products/bracelet-1.jpeg"],
+    images: ["/products/bracelet-0.webp"],
   },
   {
     title: "Angel Crystals",
     slug: "angel-crystals",
     shortDesc: "High-vibration crystals for angelic connection and guidance.",
-    images: ["/products/angel-1.jpeg"],
-  },
-  {
-    title: "Crystal Angels",
-    slug: "crystal-angels",
-    shortDesc: "Hand-carved crystal angels for peace, protection & comfort.",
-    images: ["/products/angel-2.webp"],
+    images: ["/products/angels.webp"],
   },
   {
     title: "Pyrite & Wealth Crystals",
     slug: "pyrite-wealth-crystals",
     shortDesc: "Abundance and protection crystals for money and success.",
-    images: ["/products/pyrite.png"],
+    images: ["/products/pyrite.webp"],
   },
   {
     title: "Silver Crystal Pendants",
     slug: "silver-crystal-pendants",
     shortDesc: "Natural crystal pendants set in silver for balance & intuition.",
-    images: ["/products/silver-crystal-1.jpeg"],
+    images: ["/products/silver-pendant-1.jpg"],
   },
   {
     title: "Crystal Towers, Balls & Wands",
     slug: "crystal-towers-balls-wands",
     shortDesc: "Advanced crystal tools for healing, focus & energy work.",
-    images: ["/products/crystal-tower-1.jpeg"],
+    images: ["/products/crystal-tower-1.jpg"],
   },
   {
     title: "Crystal Pyramids",
     slug: "crystal-pyramids",
     shortDesc: "Energy amplification tools for manifestation & balance.",
-    images: ["/products/pyramid-1.jpeg"],
+    images: ["/products/pyramid-0.jpg"],
   },
   {
     title: "Crystal Wish Grid Box",
     slug: "crystal-wish-grid-box",
     shortDesc: "Sacred manifestation box with crystals and grid.",
-    images: ["/products/crystal-wish-grid-box.webp"],
+    images: ["/products/crystal-wish-grid-box-0.jpg",],
   },
   {
     title: "Wish Box",
     slug: "wish-box",
     shortDesc: "Beginner-friendly manifestation and intention box.",
-    images: ["/products/wish-box.jpeg"],
+    images: ["/products/wish-box-0.jpg",],
   },
   {
     title: "Feng Shui Wealth Ingot",
     slug: "feng-shui-wealth-ingot",
     shortDesc: "Prosperity symbol for wealth attraction and retention.",
-    images: ["/products/feng-shui-ingot.png"],
+    images: ["/products/feng-shui-ingot.jpg"],
   },
   {
     title: "Reiki Charged Water Bottle",
@@ -98,7 +92,7 @@ export default function StorePage() {
     <section
       className="min-h-screen bg-lotus-bg px-4 py-14"
       data-aos="fade-up"
-      data-aos-duration="900"
+      data-aos-duration="500"
     >
       <div className="max-w-7xl mx-auto">
         {/* ================= HEADER ================= */}
