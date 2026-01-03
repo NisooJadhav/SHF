@@ -14,7 +14,7 @@ export default function HeroSection() {
       {/* ================= BACKGROUND IMAGE ================= */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg-hero.webp"
+          src="/bg-hero.png"
           alt="Background"
           fill
           priority
@@ -58,7 +58,7 @@ export default function HeroSection() {
       <div className="relative z-20 flex flex-col items-center justify-end h-full">
         {/* Hero Image */}
         <Image
-          src="/hero.webp"
+          src="/hero.png"
           alt="Hero"
           width={500}
           height={600}
@@ -66,7 +66,7 @@ export default function HeroSection() {
           data-aos="zoom-in"
           data-aos-duration="1200"
           data-aos-easing="ease-out-cubic"
-          className="drop-shadow-[0_0_70px_rgba(255,255,255,0.4)] sm:w-[320px] sm:h-auto md:w-auto md:h-[60vh]"
+          className="drop-shadow-[0_0_70px_rgba(255,255,255,0.4)] sm:w-[320px] sm:h-auto md:w-auto md:h-[65vh]"
         />
 
         {/* Quote */}
