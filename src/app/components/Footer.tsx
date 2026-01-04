@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   const phoneNumber = "918793877913";
@@ -12,7 +13,7 @@ export default function Footer() {
   const reikiLinks = [
     { name: "Usui Reiki Level 1 & 2", href: "/reiki/#level-1-2" },
     { name: "Usui Reiki Level 3a & 3b", href: "/reiki/#level-3" },
-    { name: "Usui Reiki Grandmaster", href: "/reiki/#grandmaster" },
+    { name: "Usui Reiki Mastership", href: "/reiki/#mastership" },
     { name: "Reiki Grandmastership", href: "/reiki/#complete" },
     { name: "Money Reiki", href: "/reiki/#money" },
     { name: "Karuna Reiki", href: "/reiki/#karuna" },
@@ -81,6 +82,7 @@ export default function Footer() {
               spiritual transformation through ancient wisdom and modern techniques.
             </p>
 
+            <span className="">Contact Us:</span>
             <div className="space-y-2 text-sm text-purple-200">
               <a href="tel:+918793877913" className="block hover:text-white">
                 +91 87938 77913
@@ -92,7 +94,7 @@ export default function Footer() {
                 href="mailto:sacredhealingfoundation2712@gmail.com"
                 className="block break-all hover:text-white"
               >
-                sacredhealingfoundation2712@gmail.com
+                <div className="flex"><Mail className="w-5 h-5 text-white pr-1" />sacredhealingfoundation2712@gmail.com</div>
               </a>
             </div>
 

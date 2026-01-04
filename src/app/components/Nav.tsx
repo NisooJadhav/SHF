@@ -13,7 +13,7 @@ const navLinks = [
     dropdownItems: [
       { name: "Usui Reiki Level 1 & 2", href: "/reiki/#level-1-2" },
       { name: "Usui Reiki Level 3a & 3b", href: "/reiki/#level-3" },
-      { name: "Usui Reiki Grandmaster", href: "/reiki/#grandmaster" },
+      { name: "Usui Reiki Mastership", href: "/reiki/#mastership" },
       { name: "Reiki Grandmaster (Level 1 to GM)", href: "/reiki/#complete" },
       { name: "Money Reiki", href: "/reiki/#money" },
       { name: "Karuna Reiki", href: "/reiki/#karuna" },

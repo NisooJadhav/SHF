@@ -106,12 +106,12 @@ export default function ReikiPage() {
 
       {/* ================= GRANDMASTER ================= */}
       <section
-        id="grandmaster"
+        id="mastership"
         className="px-6 py-10 max-w-5xl mx-auto scroll-mt-24"
         data-aos="fade-up"
       >
         <h2 className="text-3xl font-semibold text-lotus-purple mb-4">
-          Usui Reiki Grandmaster
+          Usui Reiki Mastership
         </h2>
         <p
           className="text-gray-700 leading-relaxed mb-4"

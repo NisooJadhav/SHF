@@ -102,7 +102,7 @@ const Whatsapp = () => {
 
       {/* ================= FLOATING ACTIONS ================= */}
       <div
-        className="fixed bottom-6 right-6 z-40 flex flex-col items-center gap-3"
+        className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3"
         data-aos="zoom-in"
         data-aos-duration="500"
       >
@@ -117,18 +117,6 @@ const Whatsapp = () => {
           </button>
         )}
 
-        {/* Download Brochure (appears AFTER modal close) */}
-        {showBrochureBtn && (
-          <a
-            href="/brochure.png"
-            download
-            aria-label="Download brochure"
-            className="flex h-12 w-12 items-center justify-center rounded-full bg-[#6B4A8C] text-white shadow-lg transition hover:scale-110"
-          >
-            <FaDownload size={18} />
-          </a>
-        )}
-
         {/* WhatsApp */}
         <Link
           href={`https://wa.me/${phoneNumber}?text=${message}`}
@@ -139,6 +127,21 @@ const Whatsapp = () => {
         >
           <FaWhatsapp size={28} />
         </Link>
+
+        {/* Download Brochure (appears AFTER modal close) */}
+        {showBrochureBtn && (
+          <a
+            href="/brochure.png"
+            download
+            aria-label="Download brochure"
+            className="flex h-12 items-center gap-2 px-4 rounded-full bg-[#6B4A8C] text-white shadow-lg transition hover:scale-110"
+          >
+            <FaDownload size={16} />
+            <span className="text-sm font-medium whitespace-nowrap">
+              Brochure
+            </span>
+          </a>
+        )}
       </div>
     </>
   );
