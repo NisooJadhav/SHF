@@ -63,18 +63,12 @@ export default function HeroSection() {
           width={500}
           height={600}
           priority
-          data-aos="zoom-in"
-          data-aos-duration="1200"
-          data-aos-easing="ease-out-cubic"
           className="drop-shadow-[0_0_70px_rgba(255,255,255,0.4)] sm:w-[320px] sm:h-auto md:w-auto md:h-[65vh]"
         />
 
         {/* Quote */}
         <div
           className="z-50 w-screen bg-white flex justify-center"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="500"
         >
           <p className="my-4 text-center text-3xl md:text-6xl font-medium text-pink-800 tracking-wide">
             <b>जहाँ समर्पण है, वहीं उपचार है।</b>
