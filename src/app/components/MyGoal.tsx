@@ -18,7 +18,7 @@ export default function MyGoal() {
         >
           {/* ================= TITLE ================= */}
           <h2
-            className="text-3xl sm:text-4xl text-lotus-purple mb-8 font-serif"
+            className="text-3xl sm:text-4xl text-lotus-purple mb-8 font-serif text-[#6e0362]"
             data-aos="fade-up"
           >
             My Goal

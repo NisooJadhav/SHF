@@ -6,14 +6,14 @@ const testimonials = [
   {
     name: "Anjali Sharma",
     city: "Mumbai",
-    image: "/client/anjali.jpg",
+    image: "/client/anjali.jpeg",
     message:
       "I had an amazing experience with the healing sessions. From the very first session, I felt calm, protected, and emotionally balanced. The energy work truly helped me release negativity and brought positivity into my life.",
   },
   {
     name: "Neha Verma",
     city: "Delhi",
-    image: "/client/neha.jpg",
+    image: "/client/neha.jpeg",
     message:
       "The Reiki and angel healing sessions were very powerful. I could feel the shift in my energy within a few days. My stress levels reduced, and I started feeling more confident and peaceful.",
   },
@@ -27,14 +27,14 @@ const testimonials = [
   {
     name: "Kavita Joshi",
     city: "Jaipur",
-    image: "/client/kavita.jpg",
+    image: "/client/kavita.jpeg",
     message:
       "After taking the healing sessions, I noticed a big change in my mindset and overall energy. I sleep better now, feel protected, and my daily life feels much more balanced.",
   },
   {
     name: "Pooja Nair",
     city: "Bangalore",
-    image: "/client/pooja.jpg",
+    image: "/client/pooja.jpeg",
     message:
       "This healing experience was truly divine. The sessions helped me emotionally and spiritually. I felt lighter, more confident, and deeply connected to positive energies.",
   },
