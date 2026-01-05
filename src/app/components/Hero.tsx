@@ -10,7 +10,7 @@ const StarsBackground = dynamic(
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[90vh] w-full overflow-hidden flex items-center justify-center">
+    <section className="relative md:h-[90vh] w-full overflow-hidden flex items-center justify-center xs:h-[90vh] sm:h-[90vh]">
       {/* ================= BACKGROUND IMAGE ================= */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -63,7 +63,7 @@ export default function HeroSection() {
           width={500}
           height={600}
           priority
-          className="drop-shadow-[0_0_70px_rgba(255,255,255,0.4)] sm:w-[320px] sm:h-auto md:w-auto md:h-[80vh]"
+          className="drop-shadow-[0_0_70px_rgba(255,255,255,0.4)] sm:w-[320px] sm:h-auto md:w-auto md:h-[80vh] "
         />
 
         {/* Quote */}
