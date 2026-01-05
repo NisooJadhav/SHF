@@ -18,9 +18,9 @@ const testimonials = [
       "The Reiki and angel healing sessions were very powerful. I could feel the shift in my energy within a few days. My stress levels reduced, and I started feeling more confident and peaceful.",
   },
   {
-    name: "Ritu Malhotra",
+    name: "Neelam Patil",
     city: "Pune",
-    image: "/client/ritu.jpg",
+    image: "/client/neelam.png",
     message:
       "I am extremely grateful for this healing journey. The guidance, protection, and energy healing helped me overcome emotional blocks. I feel more aligned, relaxed, and positive than before.",
   },
