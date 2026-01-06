@@ -3,33 +3,33 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const certificates = [
-  {
-    title: "Reiki Healer Level 1",
-    src: "/certificates/reiki_healer_level_1.png",
-  },
-  {
-    title: "Reiki Healer Level 2",
-    src: "/certificates/reiki_healer_level_2.png",
-  },
-  {
-    title: "Reiki Healer Level 3A & 3B",
-    src: "/certificates/reiki_healer_level_3a_3b.png",
-  },
-  {
-    title: "Akashic Records",
-    src: "/certificates/akashic_records.png",
-  },
-];
+// const certificates = [
+//   {
+//     title: "Reiki Healer Level 1",
+//     src: "/certificates/reiki_healer_level_1.png",
+//   },
+//   {
+//     title: "Reiki Healer Level 2",
+//     src: "/certificates/reiki_healer_level_2.png",
+//   },
+//   {
+//     title: "Reiki Healer Level 3A & 3B",
+//     src: "/certificates/reiki_healer_level_3a_3b.png",
+//   },
+//   {
+//     title: "Akashic Records",
+//     src: "/certificates/akashic_records.png",
+//   },
+// ];
 
 export default function AboutPage() {
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const prev = () =>
-    setIndex((i) => (i === 0 ? certificates.length - 1 : i - 1));
+  // const prev = () =>
+  //   setIndex((i) => (i === 0 ? certificates.length - 1 : i - 1));
 
-  const next = () =>
-    setIndex((i) => (i === certificates.length - 1 ? 0 : i + 1));
+  // const next = () =>
+  //   setIndex((i) => (i === certificates.length - 1 ? 0 : i + 1));
 
   return (
     <main className="min-h-screen bg-lotus-bg">
@@ -95,7 +95,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ================= CERTIFICATIONS ================= */}
+      {/* ================= CERTIFICATIONS ================= 
       <section
         className="px-4 py-10 bg-lotus-section"
         id="certifications"
@@ -163,6 +163,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* ================= FOUNDER JOURNEY ================= */}
       <section className="px-4 py-10">

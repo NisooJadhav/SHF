@@ -144,7 +144,7 @@ const navLinks = [
     dropdownItems: [
       { name: "About Poonam Thore", href: "/about" },
       { name: "Testimonials", href: "/#testimonials" },
-      { name: "Certifications", href: "/about/#certifications" },
+      // { name: "Certifications", href: "/about/#certifications" },
     ],
     image: "/homeabout.webp",
     description: "Reiki Grand Master",

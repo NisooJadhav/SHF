@@ -53,7 +53,7 @@ export default function Footer() {
   const aboutLinks = [
     { name: "About Poonam Thore", href: "/about" },
     { name: "Testimonials", href: "/#testimonials" },
-    { name: "Certifications", href: "/about/#certifications" },
+    // { name: "Certifications", href: "/about/#certifications" },
   ];
 
   const quickLinks = [
