@@ -21,39 +21,39 @@ const navLinks = [
     image: "/reiki.webp",
     description: "Energy healing modalities",
   },
-  {
-    name: "Reiki & Energy Healing",
-    href: "/healing",
-    hasDropdown: true,
-    dropdownItems: [
-      {
-        name: "Reiki Healing",
-        href: "/healing/#reiki",
-      },
-      {
-        name: "Advanced & Psychic Healing",
-        href: "/healing/#advanced-psychic",
-      },
-      {
-        name: "Crystal & Vibrational Healing",
-        href: "/healing/#crystal",
-      },
-      {
-        name: "Spiritual & Angelic Healing",
-        href: "/healing/#spiritual",
-      },
-      {
-        name: "Mind & Emotional Healing",
-        href: "/healing/#mind",
-      },
-      {
-        name: "Akashic Records Healing",
-        href: "/healing/#akashic",
-      },
-    ],
-    image: "/healing.webp",
-    description: "Holistic healing therapies for mind, body & soul",
-  },
+ {
+  name: "Reiki & Energy Healing",
+  href: "/book-consultation",
+  hasDropdown: true,
+  dropdownItems: [
+    {
+      name: "Reiki Healing",
+      href: "/book-consultation/#reiki",
+    },
+    {
+      name: "Advanced & Psychic Healing",
+      href: "/book-consultation/#advanced-psychic",
+    },
+    {
+      name: "Crystal & Vibrational Healing",
+      href: "/book-consultation/#crystal",
+    },
+    {
+      name: "Spiritual & Angelic Healing",
+      href: "/book-consultation/#spiritual",
+    },
+    {
+      name: "Mind & Emotional Healing",
+      href: "/book-consultation/#mind",
+    },
+    {
+      name: "Akashic Records Healing",
+      href: "/book-consultation/#akashic",
+    },
+  ],
+  image: "/healing.webp",
+  description: "Holistic healing therapies for mind, body & soul",
+},
   {
     name: "Healing Guide",
     href: "/healing-guide",
