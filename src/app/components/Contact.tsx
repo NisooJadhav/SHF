@@ -47,6 +47,7 @@ export default function Contact() {
       data-aos-duration="500"
     >
       <div className="mx-auto max-w-6xl rounded-3xl bg-lotus-section shadow-sacred p-6 md:p-12 grid lg:grid-cols-2 gap-8 md:gap-10">
+
         {/* ================= LEFT INFO ================= */}
         <div className="text-lotus-purple space-y-8">
           <div data-aos="fade-up">
@@ -55,6 +56,25 @@ export default function Contact() {
             </h2>
             <p className="text-lotus-text text-sm md:text-base">
               We're here to guide you on your healing journey
+            </p>
+          </div>
+
+          {/* Healing Call Highlight */}
+          <div
+            className="bg-white/60 rounded-2xl p-5 border border-lotus-gold/30 shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <h3 className="text-xl font-semibold mb-2 text-lotus-purple">
+              One Call Can Change Everything
+            </h3>
+            <p className="text-lotus-text text-sm leading-relaxed">
+              A deeply personalized Reiki healing call guided by{" "}
+              <strong>Grandmaster Poonam Thore</strong> to restore balance,
+              release energetic blocks, and realign you with your true self.
+            </p>
+            <p className="mt-2 text-lotus-purple font-medium text-sm">
+              ✨ Not just a consultation — a turning point.
             </p>
           </div>
 
@@ -134,7 +154,7 @@ export default function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 required
-                className="py-2 pl-2 border border-lotus-gold rounded-full"
+                className="py-2 pl-2 border border-lotus-gold rounded-full w-full"
               />
             </div>
 
@@ -149,7 +169,7 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 required
-                className="py-2 pl-2 border border-lotus-gold rounded-full"
+                className="py-2 pl-2 border border-lotus-gold rounded-full w-full"
               />
             </div>
           </div>
@@ -169,7 +189,7 @@ export default function Contact() {
                 maxLength={10}
                 pattern="[0-9]{10}"
                 title="Please enter a valid 10-digit mobile number"
-                className="py-2 pl-2 border border-lotus-gold rounded-full"
+                className="py-2 pl-2 border border-lotus-gold rounded-full w-full"
               />
             </div>
 
