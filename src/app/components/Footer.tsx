@@ -153,7 +153,6 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    target={link.target}
                     className="text-purple-200 text-sm hover:text-white"
                   >
                     {link.name}
