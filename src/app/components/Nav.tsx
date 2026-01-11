@@ -339,11 +339,12 @@ export default function Navbar() {
             {/* RIGHT: CTA */}
             <div className="hidden lg:flex flex-shrink-0 pr-10">
               <Link
-                href={whatsappLink}
+                {/* href={whatsappLink}*/}
+                href="/#contact"
                 className="rounded-full bg-gradient-to-r from-lotus-pink to-lotus-purple
                 px-6 py-3 text-white font-bold tracking-wide shadow-lg
                 transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                target="_blank"
+                {/* target="_blank" */}
               >
                 Book Consultation
               </Link>
@@ -443,11 +444,12 @@ export default function Navbar() {
                   </div>
                 ))}
                 <Link
-                  href={whatsappLink}
-                  onClick={() => setOpen(false)}
+                  href="/#contact"
+                  {/* href={whatsappLink} */}
+                  {/* onClick={() => setOpen(false)} */}
                   className="mt-4 text-center rounded-full bg-gradient-to-r from-lotus-pink to-lotus-purple
                   px-6 py-3 text-white font-bold shadow-lg hover:shadow-xl transition-all"
-                  target="_blank"
+                  {/* target="_blank" */}
                 >
                   Book Consultation
                 </Link>
