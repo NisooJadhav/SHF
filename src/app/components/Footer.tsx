@@ -111,7 +111,7 @@ export default function Footer() {
           {/* LINK SECTIONS */}
           {[
             { title: "Reiki", links: reikiLinks },
-            { title: "Energy & Reiki Healing", links: healingLinks },
+            { title: "Book Consultation", links: healingLinks },
             { title: "Healing Guide", links: healingGuideLinks },
             { title: "Courses", links: coursesLinks },
           ].map((section) => (
