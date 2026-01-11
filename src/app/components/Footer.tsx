@@ -59,7 +59,8 @@ export default function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "Store", href: "/store" },
-    { name: "Book Consultation", href: whatsappLink, target: "_blank" },
+    // { name: "Book Consultation", href: whatsappLink, target: "_blank" },
+    { name: "Book Consultation", href: "/#contact" },
   ];
 
   return (
