@@ -23,8 +23,8 @@ export default function HealingPage() {
 
       {/* ================= HERO ================= */}
       <section className="px-6 py-20 text-center max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-lotus-purple mb-6">
-          Holistic Healing Therapies
+        <h1 className="text-3xl md:text-4xl font-bold text-lotus-purple mb-6">
+          Book Consultation for Holistic Healing Therapies
         </h1>
         <p className="text-lg text-gray-700 leading-relaxed">
           Our healing services work across physical, emotional, mental, and
@@ -48,6 +48,14 @@ export default function HealingPage() {
           <li>Ancestral / Family Reiki Healing</li>
           <li>Past Trauma & Inner Child Healing</li>
         </ul>
+        <div className="mt-6 text-center">
+          <Link
+            href="/#contact"
+            className="inline-block px-8 py-4 rounded-xl bg-lotus-purple text-white font-semibold hover:opacity-90 transition"
+          >
+            Book Consultation
+          </Link>
+        </div>
       </section>
 
       {/* ================= ADVANCED / PSYCHIC ================= */}
@@ -67,6 +75,14 @@ export default function HealingPage() {
           <li>Fear, Anxiety & Overthinking Healing</li>
           <li>Cord Cutting & Energy Release Healing</li>
         </ul>
+        <div className="mt-6 text-center">
+          <Link
+            href="/#contact"
+            className="inline-block px-8 py-4 rounded-xl bg-lotus-purple text-white font-semibold hover:opacity-90 transition"
+          >
+            Book Consultation
+          </Link>
+        </div>
       </section>
 
       {/* ================= CRYSTAL ================= */}
@@ -80,6 +96,14 @@ export default function HealingPage() {
           <li>Crystal Chakra Healing</li>
           <li>Crystal Protection Healing</li>
         </ul>
+        <div className="mt-6 text-center">
+          <Link
+            href="/#contact"
+            className="inline-block px-8 py-4 rounded-xl bg-lotus-purple text-white font-semibold hover:opacity-90 transition"
+          >
+            Book Consultation
+          </Link>
+        </div>
       </section>
 
       {/* ================= SPIRITUAL / ANGEL ================= */}
@@ -96,6 +120,14 @@ export default function HealingPage() {
           <li>Angel Guidance Healing</li>
           <li>Divine Feminine / Inner Shakti Healing</li>
         </ul>
+        <div className="mt-6 text-center">
+          <Link
+            href="/#contact"
+            className="inline-block px-8 py-4 rounded-xl bg-lotus-purple text-white font-semibold hover:opacity-90 transition"
+          >
+            Book Consultation
+          </Link>
+        </div>
       </section>
 
       {/* ================= MIND ================= */}
@@ -109,6 +141,14 @@ export default function HealingPage() {
           <li>Sleep & Insomnia Healing</li>
           <li>Confidence & Self-Worth Healing</li>
         </ul>
+        <div className="mt-6 text-center">
+          <Link
+            href="/#contact"
+            className="inline-block px-8 py-4 rounded-xl bg-lotus-purple text-white font-semibold hover:opacity-90 transition"
+          >
+            Book Consultation
+          </Link>
+        </div>
       </section>
 
       {/* ================= AKASHIC ================= */}
@@ -123,10 +163,18 @@ export default function HealingPage() {
           <li>Akashic Records Healing</li>
           <li>Soul Purpose & Life Path Healing</li>
         </ul>
+        <div className="mt-6 text-center">
+          <Link
+            href="/#contact"
+            className="inline-block px-8 py-4 rounded-xl bg-lotus-purple text-white font-semibold hover:opacity-90 transition"
+          >
+            Book Consultation
+          </Link>
+        </div>
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="px-6 py-20 text-center bg-lotus-section">
+      {/* <section className="px-6 py-20 text-center bg-lotus-section">
         <h3 className="text-3xl font-semibold text-lotus-purple mb-4">
           Begin Your Healing Journey
         </h3>
@@ -140,7 +188,7 @@ export default function HealingPage() {
         >
           Book a Healing Session
         </Link>
-      </section>
+      </section> */}
     </main>
   );
 }
