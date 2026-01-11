@@ -36,7 +36,7 @@ export default function HealingPage() {
       {/* ================= REIKI ================= */}
       <section id="reiki" className="px-6 py-10 max-w-5xl mx-auto scroll-mt-24">
         <h2 className="text-3xl font-semibold text-lotus-purple mb-4">
-          ? Reiki Healing (In-Person & Distance)
+          ✨ Reiki Healing (In-Person & Distance)
         </h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
           <li>Distance Reiki Healing</li>
@@ -64,7 +64,7 @@ export default function HealingPage() {
         className="px-6 py-10 bg-white max-w-5xl mx-auto scroll-mt-24"
       >
         <h2 className="text-3xl font-semibold text-lotus-purple mb-4">
-          ?? Advanced & Psychic Healing
+          🔮 Advanced & Psychic Healing
         </h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
           <li>Psychic Healing</li>
@@ -88,7 +88,7 @@ export default function HealingPage() {
       {/* ================= CRYSTAL ================= */}
       <section id="crystal" className="px-6 py-10 max-w-5xl mx-auto scroll-mt-24">
         <h2 className="text-3xl font-semibold text-lotus-purple mb-4">
-          ?? Crystal & Vibrational Healing
+          💎 Crystal & Vibrational Healing
         </h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
           <li>Crystal Healing Therapy</li>
@@ -112,7 +112,7 @@ export default function HealingPage() {
         className="px-6 py-10 bg-white max-w-5xl mx-auto scroll-mt-24"
       >
         <h2 className="text-3xl font-semibold text-lotus-purple mb-4">
-          ?? Spiritual & Angelic Healing
+          😇 Spiritual & Angelic Healing
         </h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
           <li>Angel Healing Therapy</li>
@@ -133,7 +133,7 @@ export default function HealingPage() {
       {/* ================= MIND ================= */}
       <section id="mind" className="px-6 py-10 max-w-5xl mx-auto scroll-mt-24">
         <h2 className="text-3xl font-semibold text-lotus-purple mb-4">
-          ?? Mind & Emotional Healing
+          🧠 Mind & Emotional Healing
         </h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
           <li>EFT Therapy (Emotional Freedom Technique)</li>
@@ -157,7 +157,7 @@ export default function HealingPage() {
         className="px-6 py-10 bg-white max-w-5xl mx-auto scroll-mt-24"
       >
         <h2 className="text-3xl font-semibold text-lotus-purple mb-4">
-          ?? Akashic Records Healing
+          📜 Akashic Records Healing
         </h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2">
           <li>Akashic Records Healing</li>
@@ -172,23 +172,6 @@ export default function HealingPage() {
           </Link>
         </div>
       </section>
-
-      {/* ================= CTA ================= */}
-      {/* <section className="px-6 py-20 text-center bg-lotus-section">
-        <h3 className="text-3xl font-semibold text-lotus-purple mb-4">
-          Begin Your Healing Journey
-        </h3>
-        <p className="text-gray-700 mb-6">
-          Healing starts when intention meets divine guidance.
-        </p>
-        <Link
-          href={whatsappLink}
-          target="_blank"
-          className="inline-block px-8 py-4 rounded-xl bg-lotus-purple text-white font-semibold hover:opacity-90 transition"
-        >
-          Book a Healing Session
-        </Link>
-      </section> */}
     </main>
   );
 }
