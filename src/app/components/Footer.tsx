@@ -20,13 +20,13 @@ export default function Footer() {
   ];
 
   const healingLinks = [
-    { name: "Reiki Healing (In-Person & Distance)", href: "/healing/#reiki" },
-    { name: "Advanced & Psychic Healing", href: "/healing/#advanced-psychic" },
-    { name: "Crystal & Vibrational Healing", href: "/healing/#crystal" },
-    { name: "Spiritual & Angelic Healing", href: "/healing/#spiritual" },
-    { name: "Mind & Emotional Healing", href: "/healing/#mind" },
-    { name: "Akashic Records Healing", href: "/healing/#akashic" },
-  ];
+  { name: "Reiki Healing (In-Person & Distance)", href: "/book-consultation/#reiki" },
+  { name: "Advanced & Psychic Healing", href: "/book-consultation/#advanced-psychic" },
+  { name: "Crystal & Vibrational Healing", href: "/book-consultation/#crystal" },
+  { name: "Spiritual & Angelic Healing", href: "/book-consultation/#spiritual" },
+  { name: "Mind & Emotional Healing", href: "/book-consultation/#mind" },
+  { name: "Akashic Records Healing", href: "/book-consultation/#akashic" },
+];
 
   const healingGuideLinks = [
     { name: "What We Heal", href: "/healing-guide/#guide-what-we-heal" },
