@@ -11,7 +11,22 @@ type Course = {
   description: string;
   image: string;
   syllabus: string[];
+
+  // ✅ NEW (Optional fields for pricing + duration)
+  feesInr?: number;
+  duration?: string;
 };
+
+/* ================= HELPERS ================= */
+
+function formatINR(amount: number) {
+  return `₹${amount.toLocaleString("en-IN")}`;
+}
+
+function formatUSDFromINR(amountInr: number) {
+  const usd = amountInr / 90;
+  return `$${usd.toFixed(2)}`;
+}
 
 /* ================= COURSE DATA ================= */
 
@@ -36,84 +51,219 @@ const courses: Course[] = [
       "Reiki Ethics & Responsibility",
       "Grounding & Protection Basics",
     ],
+    // ✅ NEW pricing data (as per your latest fees)
+    feesInr: 4100,
+    duration: "3 Days",
   },
+
   {
     title: "Usui Reiki Level 2",
     slug: "usui-reiki-level-2",
     description:
-      "Advanced Reiki training introducing sacred symbols, distance healing, emotional healing, and energy clearing techniques.",
+      "Advanced Reiki training focused on paranormal energy science, Reiki symbols attunement, distance healing, brain functionality, and goal manifestation techniques.",
     image: "/courses/usui-reiki-level-2.webp",
     syllabus: [
-      "Advanced Reiki Concepts",
-      "Introduction to Reiki Symbols",
-      "Cho Ku Rei – Meaning & Usage",
-      "Sei He Ki – Meaning & Usage",
-      "Hon Sha Ze Sho Nen – Meaning & Usage",
-      "Symbol Activation Techniques",
-      "Distance Healing – Past, Present & Future",
-      "Emotional & Mental Healing with Reiki",
-      "Reiki for Others (Friends, Family, Clients)",
-      "Clearing Negative Energies",
-      "Healing Addictions & Habits",
-      "Reiki for Situations & Relationships",
-      "Reiki Boosting Techniques",
+      "Science behind all Paranormal & Supernatural Sciences",
+      "Psychokinesis",
+      "Astral Body Projection",
+      "Reason behind Tantra, Mantra & Yantra",
+      "Attunement of 3 great Reiki symbols",
+      "How to use it to Heal everything around you?",
+      "Functionality of left and right brain",
+      "Physical & distance Healing",
+      "Alpha Level Healing",
+      "Effectiveness of Visualisation",
+      "Uses & Importance of Affirmation",
+      "Attraction and Empowerment of Goal",
     ],
+    feesInr: 8100,
+    duration: "As per batch schedule",
   },
+
   {
     title: "Usui Reiki Master (Level 3A & 3B)",
     slug: "usui-reiki-master",
     description:
-      "Master-level Reiki training focusing on deep spiritual healing, attunements, teaching, and advanced ethical responsibility.",
+      "Master-level Reiki training covering deep mastery, advanced healing, higher protection, symbols, and attunement processes (Level 3A + 3B combined).",
     image: "/courses/usui-reiki-master.webp",
     syllabus: [
-      "Reiki Master Symbol – Dai Ko Myo",
-      "Deep Spiritual Healing Practices",
-      "Aura Strengthening & Expansion",
-      "Karmic Healing Basics",
-      "Reiki for Major Life Issues",
-      "Advanced Healing Techniques",
-      "Reiki Attunement – Self & Others",
-      "How to Conduct Reiki Classes",
-      "How to Heal Large Groups",
-      "Master Level Ethics & Responsibility",
+      // ✅ Reiki Level III course content (3A)
+      "Master symbol",
+      "Chakra or kundalini Meditation",
+      "Psychic attack & prevention",
+      "Crystal healing",
+      "Psychic surgery",
+      "Definite goal achievement",
+      "Science of chakra",
+      "Science of third eye",
+      "Kinesiology",
+      "Other powerful symbols",
+      "Secret of science of siddhi",
+
+      // ✅ Reiki Level 3B content
+      "Three Attunement Symbols",
+      "Power of Hui-Yin",
+      "How to Attain a Powerful State of Hui-Yin",
+      "Some Important Yog Mudras in Attunement",
+      "Learn the Powerful Initiation and Attunement Process of Reiki Level 1, 2 & 3",
+      "Naveen Reiki Attunement",
+      "Meditation for Reiki Master on a Daily Basis",
+      "New Healing Attunement",
+      "Healing Attunement of William Lee Rand",
+      "Self Attunement",
+      "Distant Attunement",
+      "Importance of Antahkarana",
+      "Varieties and Uses of Antahkarana",
+      "Japanese Reiki Techniques",
+      "Laws of the Universe",
     ],
+    feesInr: 35000,
+    duration: "As per batch schedule",
   },
+
   {
-    title: "Karuna Reiki",
+    title: "Reiki Grand Mastership",
+    slug: "reiki-grand-mastership",
+    description:
+      "The highest level of Reiki mastery focusing on hidden symbology science, advanced symbols, instant healing techniques, and 20 great Reiki symbol attunements.",
+    image: "/courses/reiki-grand-mastership.webp",
+    syllabus: [
+      "Science Behind Symbology",
+      "Origin of Reiki & Other Symbols",
+      "How Symbols Work and Generate Energy",
+      "Dr. Usui’s Hidden Knowledge & True Story",
+      "Facts & Deep Meaning of Initiation & Attunement",
+      "Attunement / Initiation of Prosperity or Money Attunement",
+      "Samridhi Shaktipat",
+      "Harmonious Relationship Attunement",
+      "Madhurya Shaktipat",
+      "Education & Knowledge Attunement",
+      "Vidya Shaktipat",
+      "Grand Master’s Instant Healing Techniques",
+      "How to Create a Powerful Reiki Master",
+      "How to Create a Master Grid",
+      "Attunement of 20 Great Reiki Symbols",
+    ],
+    feesInr: 24500,
+    duration: "As per batch schedule",
+  },
+
+  {
+    title: "Karuna Reiki (Level 1 to Grandmaster)",
     slug: "karuna-reiki",
     description:
-      "A compassion-based Reiki system designed for deep emotional healing, trauma release, and higher consciousness work.",
+      "A complete compassion-based Reiki journey from Practitioner to Master/Teacher to Grandmaster for deep emotional healing and spiritual transformation.",
     image: "/courses/karuna-reiki.webp",
     syllabus: [
-      "Introduction to Karuna Reiki",
-      "Difference Between Usui Reiki & Karuna Reiki",
-      "Karuna Reiki Symbols & Meanings",
-      "Healing Past Trauma & Deep Emotional Pain",
-      "Compassion-Based Healing Practices",
-      "Healing Inner Child Issues",
-      "Working with Higher Consciousness",
-      "Advanced Distance Healing",
-      "Karuna Reiki Meditations",
+      // ✅ Level 1
+      "Introduction to Karuna Reiki & meaning of “Karuna” (Compassion)",
+      "Energy principles & difference from Usui Reiki",
+      "Karuna Reiki Level 1 Symbols – meaning & usage",
+      "Attunement process (self & others)",
+      "Basic self-healing techniques",
+      "Healing emotional blocks & past trauma",
+      "Daily practice for energy flow & abundance",
+      "Meditation and visualization for compassion healing",
+
+      // ✅ Level 2
+      "Advanced Karuna Reiki symbols – Level 2",
+      "Attunement process for Level 2",
+      "Distance healing & sending energy across time/space",
+      "Emotional & subconscious block clearing",
+      "Healing addictions, fear, anxiety, and relationship issues",
+      "Chakra & aura cleansing techniques",
+      "Guided practice on friends/clients",
+      "Daily practice for energy expansion",
+
+      // ✅ Level 3
+      "Karuna Reiki Master symbols & high-frequency attunements",
+      "Past-life & karmic healing techniques",
+      "Shadow work & inner-child healing",
+      "How to attune others (teaching methodology)",
+      "Conducting workshops & professional sessions",
+      "Ethics & responsibilities of a Karuna Reiki Master",
+      "Advanced meditation & compassion energy activation",
+      "Self-empowerment & spiritual growth",
+
+      // ✅ Bonus Features (included as syllabus points for UI display)
+      "Lifetime access to recorded videos",
+      "PDF manuals with symbols, techniques & daily practices",
+      "Continuous mentor support via WhatsApp/email",
+      "Optional live group practice sessions",
+      "Guidance for self-healing and professional client sessions",
     ],
+    // ⚠️ You didn't give a specific Karuna fee yet (you gave only reiki fees)
+    // If Karuna has a fee later, add it here.
+    duration: "As per batch schedule",
   },
+
   {
-    title: "Money Reiki",
-    slug: "money-reiki",
+    title: "Money Reiki Level 1 – Practitioner",
+    slug: "money-reiki-level-1",
     description:
-      "A specialized Reiki course focused on clearing money blocks, healing financial karma, and activating abundance energy.",
+      "Practitioner-level Money Reiki course focused on clearing money blocks, activating abundance flow, and daily prosperity healing practices.",
     image: "/courses/money-reiki.webp",
     syllabus: [
       "Introduction to Money Reiki",
-      "Understanding Energy Blocks Related to Money",
-      "Chakras Connected to Wealth (Root & Solar Plexus)",
-      "Clearing Money Karma",
-      "Healing Financial Fears & Scarcity Mindset",
-      "Reiki Symbols for Abundance",
-      "Healing Business & Career Issues",
-      "Charging Wallets, Bank Accounts & Cheques",
-      "Manifestation Techniques with Money Reiki",
+      "Difference between Reiki & Money Reiki",
+      "Understanding money energy and abundance flow",
+      "Money Reiki symbols – introduction & attunement",
+      "Clearing money blocks and fear of money",
+      "Self-healing with Money Reiki",
+      "Attracting income, opportunities & stability",
+      "Money meditation techniques",
+      "Charging wallet, money box, cheques, salary slips",
+      "Daily Money Reiki practice",
+      "Certificate of completion",
     ],
+    feesInr: 5100,
+    duration: "1–2 Days OR 8–12 Hours (Online/Offline)",
   },
+
+  {
+    title: "Money Reiki Level 2 – Advanced / Distance Healing",
+    slug: "money-reiki-level-2",
+    description:
+      "Advanced Money Reiki training for distance healing, clearing subconscious beliefs, healing financial karma, and programming money goals.",
+    image: "/courses/money-reiki.webp",
+    syllabus: [
+      "Advanced Money Reiki symbols",
+      "Distance Money Reiki healing",
+      "Healing past financial karma & patterns",
+      "Subconscious money belief clearing",
+      "Business, job & sales energy healing",
+      "Money goals programming",
+      "Prosperity affirmations with Reiki",
+      "Abundance rituals & grids",
+      "Case studies & practice sessions",
+      "Advanced certification",
+    ],
+    feesInr: 7100,
+    duration: "2–4 Days OR 2–4 Weeks (Online Batches)",
+  },
+
+  {
+    title: "Money Reiki Level 3 – Master / Teacher",
+    slug: "money-reiki-level-3",
+    description:
+      "Master-level Money Reiki program covering attunements, teaching methodology, professional session format, and mass abundance healing.",
+    image: "/courses/money-reiki.webp",
+    syllabus: [
+      "Master level Money Reiki symbols",
+      "High-frequency abundance attunements",
+      "How to attune others into Money Reiki",
+      "Teaching methodology",
+      "Client money-healing session format",
+      "Mass abundance healing techniques",
+      "Wealth consciousness expansion",
+      "Creating your own Money Reiki workshops",
+      "Ethics & responsibility of a Master",
+      "Master / Teacher certificate",
+    ],
+    feesInr: 17000,
+    duration: "3–6 Days OR 1–2 Months (Advanced Training)",
+  },
+
   {
     title: "Angel Therapy (Basic to Advanced)",
     slug: "angel-therapy",
@@ -131,9 +281,10 @@ const courses: Course[] = [
       "Calling Angels for Protection & Guidance",
       "Working with Archangel Michael, Raphael, Gabriel & Uriel",
     ],
+    duration: "As per batch schedule",
   },
 
-  /* ================= NEW TAROT COURSES ================= */
+  /* ================= TAROT COURSES ================= */
 
   {
     title: "Rider Waite Tarot Card Reading",
@@ -148,14 +299,17 @@ const courses: Course[] = [
       "Numerology in Tarot (Numbers, Major Arcana & Number Patterns)",
       "Structure of Tarot Deck – Major Arcana & Minor Arcana (Rider Waite Deck)",
       "Benefits of Mastering Tarot & Role of a Conscious Tarot Reader",
-      "Code of Ethics, Do’s & Don’ts & Thumb Rules of Tarot Reading",],
+      "Code of Ethics, Do’s & Don’ts & Thumb Rules of Tarot Reading",
+    ],
+    duration: "As per batch schedule",
   },
+
   {
     title: "Osho Zen Tarot Card Reading",
     slug: "osho-zen-tarot-card",
     description:
       "A consciousness-based tarot course integrating Zen philosophy, intuition, and healing-oriented readings.",
-    image: "/courses/osho-zen-tarot-card.webp",
+    image: "/courses/osho-zen-tarot.webp",
     syllabus: [
       "Introduction to Tarot, History of Tarot & Evolution of Osho Zen Tarot",
       "Tarot as Divination, Artistic Science & Tool of Awareness",
@@ -178,6 +332,7 @@ const courses: Course[] = [
       "Practice Readings, Case Studies & Confidence Building",
       "Professional Tarot Practice – Client Sessions, Ethics & Spiritual Service",
     ],
+    duration: "As per batch schedule",
   },
 
   {
@@ -197,7 +352,9 @@ const courses: Course[] = [
       "Self-Healing & Client Healing",
       "Wearing Crystals & Crystal Jewelry Healing",
     ],
+    duration: "As per batch schedule",
   },
+
   {
     title: "EFT (Emotional Freedom Technique)",
     slug: "eft",
@@ -214,30 +371,7 @@ const courses: Course[] = [
       "Creating Effective EFT Statements",
       "Self-Tapping & Client Sessions",
     ],
-  },
-  {
-    title: "Reiki Grand Mastership",
-    slug: "reiki-grand-mastership",
-    description:
-      "The highest level of Reiki mastery focusing on lineage holding, advanced symbols, karmic healing, and spiritual discipline.",
-    image: "/courses/reiki-grand-mastership.webp",
-    syllabus: [
-      "Reiki Grand Master Consciousness & Role",
-      "Advanced Reiki Energy Science",
-      "Grand Master Reiki Symbols (20 Symbols)",
-      "High-Level Protection Techniques",
-      "Wealth & Abundance Healing Methods",
-      "Sacred Protection & Wealth Mantras",
-      "Grand Master Attunement Process",
-      "Distance & Mass Attunements",
-      "Teaching & Training Methodology",
-      "Advanced Healing Techniques",
-      "Karmic & Ancestral Healing",
-      "Angelic & Higher Guidance Healing",
-      "Tantra–Mantra–Yantra Integration",
-      "Ethics, Karma & Energy Responsibility",
-      "Lineage Holding & Spiritual Discipline",
-    ],
+    duration: "As per batch schedule",
   },
 ];
 
@@ -280,6 +414,8 @@ export default async function CourseDetailPage({
     `Hi, I would like to know more about the ${course.title} course.`
   );
 
+  const showFees = typeof course.feesInr === "number";
+
   return (
     <section
       className="min-h-screen bg-lotus-bg px-4 py-12"
@@ -288,10 +424,7 @@ export default async function CourseDetailPage({
     >
       <div className="mx-auto max-w-5xl">
         {/* ================= BREADCRUMBS ================= */}
-        <nav
-          className="mb-6 text-sm text-lotus-muted"
-          data-aos="fade-up"
-        >
+        <nav className="mb-6 text-sm text-lotus-muted" data-aos="fade-up">
           <Link href="/" className="hover:text-lotus-purple">
             Home
           </Link>
@@ -339,13 +472,68 @@ export default async function CourseDetailPage({
                 {course.description}
               </p>
 
+              {/* ✅ DURATION */}
+              {course.duration && (
+                <div
+                  className="mt-4 rounded-2xl bg-white/70 p-4 border border-black/5"
+                  data-aos="fade-up"
+                  data-aos-delay="130"
+                >
+                  <p className="text-sm text-lotus-muted">
+                    <span className="font-semibold text-lotus-text">
+                      Duration:
+                    </span>{" "}
+                    {course.duration}
+                  </p>
+                </div>
+              )}
+
+              {/* ✅ FEES (INR + USD) */}
+              {showFees && (
+                <div
+                  className="mt-4 rounded-2xl bg-white/70 p-4 border border-black/5"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <p className="text-sm text-lotus-muted">
+                    <span className="font-semibold text-lotus-text">Fees:</span>{" "}
+                    <span className="font-semibold text-lotus-purple">
+                      {formatINR(course.feesInr!)}
+                    </span>{" "}
+                    <span className="text-lotus-muted">
+                      ({formatUSDFromINR(course.feesInr!)})
+                    </span>
+                  </p>
+
+                  <p className="mt-1 text-xs text-lotus-muted">
+                    USD amount is approximate (INR ÷ 90).
+                  </p>
+                </div>
+              )}
+
+              {/* ✅ ZOOM NOTE (Required on all courses) */}
+              <div
+                className="mt-5 rounded-2xl bg-lotus-bg p-4 border border-black/5"
+                data-aos="fade-up"
+                data-aos-delay="170"
+              >
+                <p className="text-sm font-semibold text-lotus-text">
+                  𝗖𝗟𝗔𝗦𝗦𝗘𝗦 𝗪𝗜𝗟𝗟 𝗕𝗘 𝗟𝗜𝗩𝗘 𝗢𝗡 𝗭𝗢𝗢𝗠.
+                </p>
+                <p className="mt-2 text-sm text-lotus-muted">
+                  ❌ NO TRAVELLING <br />
+                  ❌ NO OFF REQUIRED FROM JOB/WORK <br />
+                  ❌ NO HAMPER IN HOUSEHOLD ACTIVITIES
+                </p>
+              </div>
+
               <a
                 href={`https://wa.me/${phoneNumber}?text=${message}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 w-fit rounded-full bg-lotus-gold px-6 py-3 text-white text-sm font-medium hover:scale-105 transition"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="220"
               >
                 Enquire on WhatsApp
               </a>
