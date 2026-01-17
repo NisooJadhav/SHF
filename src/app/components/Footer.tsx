@@ -20,13 +20,13 @@ export default function Footer() {
   ];
 
   const healingLinks = [
-  { name: "Reiki Healing (In-Person & Distance)", href: "/book-consultation/#reiki" },
-  { name: "Advanced & Psychic Healing", href: "/book-consultation/#advanced-psychic" },
-  { name: "Crystal & Vibrational Healing", href: "/book-consultation/#crystal" },
-  { name: "Spiritual & Angelic Healing", href: "/book-consultation/#spiritual" },
-  { name: "Mind & Emotional Healing", href: "/book-consultation/#mind" },
-  { name: "Akashic Records Healing", href: "/book-consultation/#akashic" },
-];
+    { name: "Reiki Healing (In-Person & Distance)", href: "/book-consultation/#reiki" },
+    { name: "Advanced & Psychic Healing", href: "/book-consultation/#advanced-psychic" },
+    { name: "Crystal & Vibrational Healing", href: "/book-consultation/#crystal" },
+    { name: "Spiritual & Angelic Healing", href: "/book-consultation/#spiritual" },
+    { name: "Mind & Emotional Healing", href: "/book-consultation/#mind" },
+    { name: "Akashic Records Healing", href: "/book-consultation/#akashic" },
+  ];
 
   const healingGuideLinks = [
     { name: "What We Heal", href: "/healing-guide/#guide-what-we-heal" },
@@ -39,16 +39,22 @@ export default function Footer() {
   const coursesLinks = [
     { name: "Usui Reiki Level 1", href: "/courses/usui-reiki-level-1" },
     { name: "Usui Reiki Level 2", href: "/courses/usui-reiki-level-2" },
-    { name: "Usui Reiki Master", href: "/courses/usui-reiki-master" },
+    { name: "Usui Reiki Master (3A & 3B)", href: "/courses/usui-reiki-master" },
     { name: "Reiki Grand Mastership", href: "/courses/reiki-grand-mastership" },
-    { name: "Karuna Reiki", href: "/courses/karuna-reiki" },
-    { name: "Money Reiki", href: "/courses/money-reiki" },
+    { name: "Karuna Reiki (Level 1 to Grandmaster)", href: "/courses/karuna-reiki" },
+
+    // ✅ Money Reiki (3 Levels)
+    { name: "Money Reiki Level 1 – Practitioner", href: "/courses/money-reiki-level-1" },
+    { name: "Money Reiki Level 2 – Advanced / Distance", href: "/courses/money-reiki-level-2" },
+    { name: "Money Reiki Level 3 – Master / Teacher", href: "/courses/money-reiki-level-3" },
+
     { name: "Angel Therapy", href: "/courses/angel-therapy" },
     { name: "Rider Waite Tarot Card", href: "/courses/rider-waite-tarot-card" },
     { name: "Osho Zen Tarot Card", href: "/courses/osho-zen-tarot-card" },
     { name: "Crystal Healing", href: "/courses/crystal-healing" },
     { name: "EFT (Emotional Freedom Technique)", href: "/courses/eft" },
   ];
+
 
   const aboutLinks = [
     { name: "About Poonam Thore", href: "/about" },
@@ -100,12 +106,12 @@ export default function Footer() {
             </div>
 
             <span className="text-sm font-semibold bg-white pb-2 pt-1 px-2 rounded-full">
-            <span className="text-green-700">॥ श्री</span>
-            &nbsp;
-            <span className="text-blue-700">कृष्ण</span>
-            &nbsp;
-            <span className="text-purple-700">शरणम् ॥</span>
-          </span>
+              <span className="text-green-700">॥ श्री</span>
+              &nbsp;
+              <span className="text-blue-700">कृष्ण</span>
+              &nbsp;
+              <span className="text-purple-700">शरणम् ॥</span>
+            </span>
           </div>
 
           {/* LINK SECTIONS */}
@@ -169,10 +175,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Sacred Healing Foundation. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-purple-300 text-sm hover:text-white">
+            <Link href="/privacy-policy" className="text-purple-300 text-sm hover:text-white">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-purple-300 text-sm hover:text-white">
+            <Link href="/terms-conditions" className="text-purple-300 text-sm hover:text-white">
               Terms of Service
             </Link>
           </div>
