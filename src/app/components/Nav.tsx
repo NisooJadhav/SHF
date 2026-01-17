@@ -16,12 +16,10 @@ const navLinks = [
       { name: "Usui Reiki Mastership", href: "/reiki/#mastership" },
       { name: "Reiki Grandmaster (Level 1 to GM)", href: "/reiki/#complete" },
 
-      // ✅ Updated: Money Reiki (3 Levels)
       { name: "Money Reiki Level 1", href: "/reiki/#money-level-1" },
       { name: "Money Reiki Level 2", href: "/reiki/#money-level-2" },
       { name: "Money Reiki Level 3", href: "/reiki/#money-level-3" },
 
-      // ✅ Updated label
       { name: "Karuna Reiki (Level 1 to Grandmaster)", href: "/reiki/#karuna" },
     ],
     image: "/reiki.webp",
@@ -32,30 +30,12 @@ const navLinks = [
     href: "/book-consultation",
     hasDropdown: true,
     dropdownItems: [
-      {
-        name: "Reiki Healing",
-        href: "/book-consultation/#reiki",
-      },
-      {
-        name: "Advanced & Psychic Healing",
-        href: "/book-consultation/#advanced-psychic",
-      },
-      {
-        name: "Crystal & Vibrational Healing",
-        href: "/book-consultation/#crystal",
-      },
-      {
-        name: "Spiritual & Angelic Healing",
-        href: "/book-consultation/#spiritual",
-      },
-      {
-        name: "Mind & Emotional Healing",
-        href: "/book-consultation/#mind",
-      },
-      {
-        name: "Akashic Records Healing",
-        href: "/book-consultation/#akashic",
-      },
+      { name: "Reiki Healing", href: "/book-consultation/#reiki" },
+      { name: "Advanced & Psychic Healing", href: "/book-consultation/#advanced-psychic" },
+      { name: "Crystal & Vibrational Healing", href: "/book-consultation/#crystal" },
+      { name: "Spiritual & Angelic Healing", href: "/book-consultation/#spiritual" },
+      { name: "Mind & Emotional Healing", href: "/book-consultation/#mind" },
+      { name: "Akashic Records Healing", href: "/book-consultation/#akashic" },
     ],
     image: "/healing.webp",
     description: "Holistic healing therapies for mind, body & soul",
@@ -65,26 +45,11 @@ const navLinks = [
     href: "/healing-guide",
     hasDropdown: true,
     dropdownItems: [
-      {
-        name: "What We Heal",
-        href: "/healing-guide/#guide-what-we-heal",
-      },
-      {
-        name: "How We Heal",
-        href: "/healing-guide/#guide-how-we-heal",
-      },
-      {
-        name: "Healing Process",
-        href: "/healing-guide/#guide-healing-process",
-      },
-      {
-        name: "How Healing Works",
-        href: "/healing-guide/#guide-how-healing-works",
-      },
-      {
-        name: "Healing Ethics",
-        href: "/healing-guide/#guide-ethics",
-      },
+      { name: "What We Heal", href: "/healing-guide/#guide-what-we-heal" },
+      { name: "How We Heal", href: "/healing-guide/#guide-how-we-heal" },
+      { name: "Healing Process", href: "/healing-guide/#guide-healing-process" },
+      { name: "How Healing Works", href: "/healing-guide/#guide-how-healing-works" },
+      { name: "Healing Ethics", href: "/healing-guide/#guide-ethics" },
     ],
     image: "/healing-guide.webp",
     description: "Understand our way of healing",
@@ -94,61 +59,21 @@ const navLinks = [
     href: "/courses",
     hasDropdown: true,
     dropdownItems: [
-      {
-        name: "Usui Reiki Level 1",
-        href: "/courses/usui-reiki-level-1",
-      },
-      {
-        name: "Usui Reiki Level 2",
-        href: "/courses/usui-reiki-level-2",
-      },
-      {
-        name: "Usui Reiki Master (3A & 3B)",
-        href: "/courses/usui-reiki-master",
-      },
-      {
-        name: "Reiki Grand Mastership",
-        href: "/courses/reiki-grand-mastership",
-      },
-      {
-        name: "Karuna Reiki (Level 1 to Grandmaster)",
-        href: "/courses/karuna-reiki",
-      },
+      { name: "Usui Reiki Level 1", href: "/courses/usui-reiki-level-1" },
+      { name: "Usui Reiki Level 2", href: "/courses/usui-reiki-level-2" },
+      { name: "Usui Reiki Master (3A & 3B)", href: "/courses/usui-reiki-master" },
+      { name: "Reiki Grand Mastership", href: "/courses/reiki-grand-mastership" },
+      { name: "Karuna Reiki", href: "/courses/karuna-reiki" },
 
-      // ✅ Updated: Money Reiki (3 Levels)
-      {
-        name: "Money Reiki Level 1 – Practitioner",
-        href: "/courses/money-reiki-level-1",
-      },
-      {
-        name: "Money Reiki Level 2 – Advanced / Distance",
-        href: "/courses/money-reiki-level-2",
-      },
-      {
-        name: "Money Reiki Level 3 – Master / Teacher",
-        href: "/courses/money-reiki-level-3",
-      },
+      { name: "Money Reiki Level 1", href: "/courses/money-reiki-level-1" },
+      { name: "Money Reiki Level 2", href: "/courses/money-reiki-level-2" },
+      { name: "Money Reiki Level 3", href: "/courses/money-reiki-level-3" },
 
-      {
-        name: "Angel Therapy",
-        href: "/courses/angel-therapy",
-      },
-      {
-        name: "Rider Waite Tarot Card",
-        href: "/courses/rider-waite-tarot-card",
-      },
-      {
-        name: "Osho Zen Tarot Card",
-        href: "/courses/osho-zen-tarot-card",
-      },
-      {
-        name: "Crystal Healing",
-        href: "/courses/crystal-healing",
-      },
-      {
-        name: "EFT (Emotional Freedom Technique)",
-        href: "/courses/eft",
-      },
+      { name: "Angel Therapy", href: "/courses/angel-therapy" },
+      { name: "Rider Waite Tarot Card", href: "/courses/rider-waite-tarot-card" },
+      { name: "Osho Zen Tarot Card", href: "/courses/osho-zen-tarot-card" },
+      { name: "Crystal Healing", href: "/courses/crystal-healing" },
+      { name: "EFT (Emotional Freedom Technique)", href: "/courses/eft" },
     ],
     image: "/courses.webp",
     description: "Certified Spiritual & Healing Courses",
@@ -160,34 +85,18 @@ const navLinks = [
     dropdownItems: [
       { name: "About Poonam Thore", href: "/about" },
       { name: "Testimonials", href: "/#testimonials" },
-      // { name: "Certifications", href: "/about/#certifications" },
     ],
     image: "/homeabout.webp",
     description: "Reiki Grand Master",
   },
-  {
-    name: "Contact",
-    href: "/#contact",
-    hasDropdown: false,
-  },
-  {
-    name: "Store",
-    href: "/store",
-    hasDropdown: false,
-  },
-  {
-    name: "🛒",
-    href: "/cart",
-    hasDropdown: false,
-  },
+  { name: "Contact", href: "/#contact", hasDropdown: false },
+  { name: "Store", href: "/store", hasDropdown: false },
+  { name: "🛒", href: "/cart", hasDropdown: false },
 ] as const;
 
 export default function Navbar() {
   const phoneNumber = "918793877913";
-  const message = encodeURIComponent(
-    "Hi, I would like to book a consultation."
-  );
-
+  const message = encodeURIComponent("Hi, I would like to book a consultation.");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
   const [open, setOpen] = useState(false);
@@ -204,40 +113,32 @@ export default function Navbar() {
             Sacred Healing Foundation ~ Poonam Thore
           </span>
           <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-700">॥ श्री</span>
-            &nbsp;
-            <span className="text-blue-700">कृष्ण</span>
-            &nbsp;
+            <span className="text-green-700">॥ श्री</span>&nbsp;
+            <span className="text-blue-700">कृष्ण</span>&nbsp;
             <span className="text-purple-700">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
           <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-700">॥ श्री</span>
-            &nbsp;
-            <span className="text-blue-700">कृष्ण</span>
-            &nbsp;
+            <span className="text-green-700">॥ श्री</span>&nbsp;
+            <span className="text-blue-700">कृष्ण</span>&nbsp;
             <span className="text-purple-700">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
           <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-700">॥ श्री</span>
-            &nbsp;
-            <span className="text-blue-700">कृष्ण</span>
-            &nbsp;
+            <span className="text-green-700">॥ श्री</span>&nbsp;
+            <span className="text-blue-700">कृष्ण</span>&nbsp;
             <span className="text-purple-700">शरणम् ॥</span>
           </span>
           <span className="text-white text-sm font-medium mx-6">
             Sacred Healing Foundation ~ Poonam Thore
           </span>
           <span className="text-sm font-semibold mx-8 bg-white p-2 rounded-full">
-            <span className="text-green-700">॥ श्री</span>
-            &nbsp;
-            <span className="text-blue-700">कृष्ण</span>
-            &nbsp;
+            <span className="text-green-700">॥ श्री</span>&nbsp;
+            <span className="text-blue-700">कृष्ण</span>&nbsp;
             <span className="text-purple-700">शरणम् ॥</span>
           </span>
         </Marquee>
@@ -248,10 +149,7 @@ export default function Navbar() {
         <nav className="max-w-8xl">
           <div className="pl-15 flex h-20 items-center justify-between">
             {/* LEFT: LOGO */}
-            <Link
-              href="/"
-              className="flex items-center gap-3 flex-shrink-0 -ml-12"
-            >
+            <Link href="/" className="flex items-center gap-3 flex-shrink-0 -ml-12">
               <div className="relative h-14 w-48 sm:h-16 sm:w-56">
                 <Image
                   src="/logo.webp"
@@ -269,9 +167,7 @@ export default function Navbar() {
                 <div
                   key={link.name}
                   className="relative"
-                  onMouseEnter={() =>
-                    link.hasDropdown && setActiveDropdown(link.name)
-                  }
+                  onMouseEnter={() => link.hasDropdown && setActiveDropdown(link.name)}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
                   <Link
@@ -282,13 +178,9 @@ export default function Navbar() {
                     hover:after:w-full hover:text-purple-600 flex items-center gap-1"
                   >
                     {link.name}
+
                     {link.hasDropdown && (
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -297,6 +189,7 @@ export default function Navbar() {
                         />
                       </svg>
                     )}
+
                     {link.name === "🛒" && (
                       <span className="inline-flex items-center justify-center px-1 py-0.5 rounded-full text-xs font-semibold bg-[var(--color-lotus-gold)] text-white">
                         {items.length}
@@ -305,49 +198,44 @@ export default function Navbar() {
                   </Link>
 
                   {/* DROPDOWN MENU */}
-                  {link.hasDropdown &&
-                    activeDropdown === link.name &&
-                    link.dropdownItems && (
-                      <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 animate-in fade-in slide-in-from-top-2 duration-200">
-                        <div className="bg-white rounded-2xl shadow-2xl border border-purple-100 overflow-hidden min-w-[500px]">
-                          <div className="flex">
-                            {/* Left side - Links */}
-                            <div className="flex-1 p-4">
-                              <h3 className="text-sm font-bold text-purple-600 uppercase tracking-wider mb-4">
-                                {link.description}
-                              </h3>
-                              <div className="space-y-2">
-                                {link.dropdownItems.map((item) => (
-                                  <Link
-                                    key={item.name}
-                                    href={item.href}
-                                    className="block px-4 py-2.5 text-gray-700 hover:text-purple-600 
+                  {link.hasDropdown && activeDropdown === link.name && link.dropdownItems && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 animate-in fade-in slide-in-from-top-2 duration-200">
+                      <div className="bg-white rounded-2xl shadow-2xl border border-purple-100 overflow-hidden min-w-[500px] max-h-[420px]">
+                        <div className="flex">
+                          {/* Left side - Links (SCROLL ENABLED ✅) */}
+                          <div className="flex-1 p-4 overflow-y-auto">
+                            <h3 className="text-sm font-bold text-purple-600 uppercase tracking-wider mb-4">
+                              {link.description}
+                            </h3>
+
+                            {/* ✅ Scrollable list */}
+                            <div className="space-y-2 max-h-[320px] overflow-y-auto pr-2">
+                              {link.dropdownItems.map((item) => (
+                                <Link
+                                  key={item.name}
+                                  href={item.href}
+                                  className="block px-4 py-2.5 text-gray-700 hover:text-purple-600 
                                   hover:bg-purple-50 rounded-lg transition-all duration-200 font-medium"
-                                  >
-                                    {item.name}
-                                  </Link>
-                                ))}
+                                >
+                                  {item.name}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* Right side - Image */}
+                          {link.image && (
+                            <div className="w-48 bg-gradient-to-br from-purple-100 to-lotus-pink flex items-center justify-center">
+                              <div className="relative w-full h-full overflow-hidden shadow-lg">
+                                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-lotus-pink-600/20"></div>
+                                <Image src={link.image} alt={link.name} fill className="object-cover" />
                               </div>
                             </div>
-
-                            {/* Right side - Image */}
-                            {link.image && (
-                              <div className="w-48 bg-gradient-to-br from-purple-100 to-lotus-pink flex items-center justify-center">
-                                <div className="relative w-full h-full overflow-hidden shadow-lg">
-                                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-lotus-pink-600/20"></div>
-                                  <Image
-                                    src={link.image}
-                                    alt={link.name}
-                                    fill
-                                    className="object-cover"
-                                  />
-                                </div>
-                              </div>
-                            )}
-                          </div>
+                          )}
                         </div>
                       </div>
-                    )}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -406,12 +294,11 @@ export default function Navbar() {
                           </span>
                         )}
                       </Link>
+
                       {link.hasDropdown && (
                         <button
                           onClick={() =>
-                            setMobileDropdown(
-                              mobileDropdown === link.name ? null : link.name
-                            )
+                            setMobileDropdown(mobileDropdown === link.name ? null : link.name)
                           }
                           className="p-3 text-purple-600"
                         >
@@ -434,31 +321,40 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile Dropdown */}
-                    {link.hasDropdown &&
-                      mobileDropdown === link.name &&
-                      link.dropdownItems && (
-                        <div className="ml-4 mt-2 space-y-1 animate-in slide-in-from-top duration-200">
-                          {link.dropdownItems.map((item) => (
-                            <Link
-                              key={item.name}
-                              href={item.href}
-                              onClick={() => setOpen(false)}
-                              className="block px-4 py-2.5 text-sm text-gray-600 hover:text-purple-600 
+                    {link.hasDropdown && mobileDropdown === link.name && link.dropdownItems && (
+                      <div className="ml-4 mt-2 space-y-1 animate-in slide-in-from-top duration-200 max-h-[260px] overflow-y-auto pr-1">
+                        {link.dropdownItems.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            onClick={() => setOpen(false)}
+                            className="block px-4 py-2.5 text-sm text-gray-600 hover:text-purple-600 
                             hover:bg-white rounded-lg transition-all"
-                            >
-                              {item.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ))}
+
                 <Link
                   href="/#contact"
                   className="mt-4 text-center rounded-full bg-gradient-to-r from-lotus-pink to-lotus-purple
                   px-6 py-3 text-white font-bold shadow-lg hover:shadow-xl transition-all"
                 >
                   Book Consultation
+                </Link>
+
+                {/* Optional WhatsApp Button */}
+                <Link
+                  href={whatsappLink}
+                  target="_blank"
+                  className="mt-3 text-center rounded-full border border-purple-300 bg-white
+                  px-6 py-3 text-purple-700 font-bold shadow-sm hover:shadow-md transition-all"
+                >
+                  WhatsApp Now
                 </Link>
               </div>
             </div>
