@@ -23,7 +23,7 @@ type Props = {
 type StoreCategory = {
   title: string;
   slug: string;
-  basePrice: number;
+  basePrice: string;
   description: string[];
   images: string[];
 };
@@ -36,7 +36,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Raw Crystals",
     slug: "raw-crystals",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "100% natural, unpolished stones sourced in their raw energetic form.",
       "Used for energy cleansing, protection, meditation, Reiki healing, and chakra & aura balancing.",
@@ -59,7 +59,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Crystal Bracelets & Pendants",
     slug: "crystal-bracelets-pendants",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Made with 100% natural crystals for daily wearable energy support.",
       "Helps with protection, emotional balance, meditation, and manifestation.",
@@ -87,7 +87,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Angel Crystals",
     slug: "angel-crystals",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "High-vibration crystals selected for angelic connection and guidance.",
       "Supports angel protection, emotional healing, inner peace, and calmness.",
@@ -99,7 +99,7 @@ const storeCategories: StoreCategory[] = [
     ],
     images: [
       "/products/angels.webp",
-      "/products/angel-1.jpeg", 
+      "/products/angel-1.jpeg",
       "/products/angel-2.webp"
     ],
   },
@@ -107,7 +107,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Pyrite & Wealth Crystals",
     slug: "pyrite-wealth-crystals",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Abundance and protection crystals associated with wealth and success.",
       "Helps attract money, prosperity, and new opportunities.",
@@ -126,7 +126,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Silver Crystal Pendants",
     slug: "silver-crystal-pendants",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Natural healing crystals set in high-quality silver.",
       "Supports emotional balance, chakra alignment, and intuition.",
@@ -145,7 +145,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Crystal Towers, Balls & Wands",
     slug: "crystal-towers-balls-wands",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Includes crystal towers, spheres (balls), and wands.",
       "Available in Clear Quartz, Amethyst, Rose Quartz, Green Aventurine, and 7 Chakra crystals.",
@@ -166,7 +166,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Crystal Pyramids",
     slug: "crystal-pyramids",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Energy-amplifying crystal pyramids for healing and manifestation.",
       "Available in Clear Quartz, Rose Quartz, Amethyst, Green Aventurine, and 7 Chakra.",
@@ -182,7 +182,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Crystal Wish Grid Box",
     slug: "crystal-wish-grid-box",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Sacred manifestation tool combining crystals with a sacred grid.",
       "Used for wish fulfillment related to abundance, love, health, and protection.",
@@ -200,7 +200,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Wish Box (Manifestation Box)",
     slug: "wish-box",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Beginner-friendly manifestation and intention-setting tool.",
       "Supports goal clarity, faith, emotional balance, and inner peace.",
@@ -218,7 +218,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Feng Shui Wealth Ingot",
     slug: "feng-shui-wealth-ingot",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Traditional Chinese prosperity symbol for wealth attraction.",
       "Supports financial growth, business success, and wealth retention.",
@@ -232,7 +232,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Reiki Charged Water Bottle",
     slug: "reiki-charged-water-bottle",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Intention-based hydration tool designed for mindfulness and positivity.",
       "Supports positive mindset and daily intention focus.",
@@ -247,7 +247,7 @@ const storeCategories: StoreCategory[] = [
   {
     title: "Reiki Infused Wellness Oil",
     slug: "reiki-infused-wellness-oil",
-    basePrice: 100,
+    basePrice: "100",
     description: [
       "Intention-based spiritual oil infused with Reiki energy.",
       "Supports calmness, emotional balance, and relaxation.",
@@ -372,11 +372,10 @@ export default function StoreCategoryClient({ slug }: Props) {
                   <button
                     key={i}
                     onClick={() => setCurrentImageIndex(i)}
-                    className={`relative w-20 h-20 rounded-lg overflow-hidden ${
-                      i === currentImageIndex
-                        ? "ring-4 ring-purple-500"
-                        : "ring-2 ring-gray-200"
-                    }`}
+                    className={`relative w-20 h-20 rounded-lg overflow-hidden ${i === currentImageIndex
+                      ? "ring-4 ring-purple-500"
+                      : "ring-2 ring-gray-200"
+                      }`}
                   >
                     <Image src={img} alt="" fill className="object-contain" />
                   </button>
@@ -403,7 +402,7 @@ export default function StoreCategoryClient({ slug }: Props) {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Starting from ₹{category.basePrice}
+              Contact Us for pricing
             </div>
 
             <ul className="space-y-3 mb-8">
@@ -429,11 +428,10 @@ export default function StoreCategoryClient({ slug }: Props) {
               <button
                 onClick={handleAddToCart}
                 disabled={addedToCart}
-                className={`hover:scale-105 transition-all ease-in-out cursor-pointer flex-1 flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold ${
-                  addedToCart
-                    ? "bg-green-500 text-white"
-                    : "bg-gradient-to-r from-lotus-pink to-lotus-purple text-white hover:bg-purple-700"
-                }`}
+                className={`hover:scale-105 transition-all ease-in-out cursor-pointer flex-1 flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold ${addedToCart
+                  ? "bg-green-500 text-white"
+                  : "bg-gradient-to-r from-lotus-pink to-lotus-purple text-white hover:bg-purple-700"
+                  }`}
               >
                 {addedToCart ? (
                   <>
