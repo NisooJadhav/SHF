@@ -15,45 +15,51 @@ const navLinks = [
       { name: "Usui Reiki Level 3a & 3b", href: "/reiki/#level-3" },
       { name: "Usui Reiki Mastership", href: "/reiki/#mastership" },
       { name: "Reiki Grandmaster (Level 1 to GM)", href: "/reiki/#complete" },
-      { name: "Money Reiki", href: "/reiki/#money" },
-      { name: "Karuna Reiki", href: "/reiki/#karuna" },
+
+      // ✅ Updated: Money Reiki (3 Levels)
+      { name: "Money Reiki Level 1", href: "/reiki/#money-level-1" },
+      { name: "Money Reiki Level 2", href: "/reiki/#money-level-2" },
+      { name: "Money Reiki Level 3", href: "/reiki/#money-level-3" },
+
+      // ✅ Updated label
+      { name: "Karuna Reiki (Level 1 to Grandmaster)", href: "/reiki/#karuna" },
     ],
     image: "/reiki.webp",
     description: "Energy healing modalities",
   },
- {
-  name: "Reiki & Energy Healing",
-  href: "/book-consultation",
-  hasDropdown: true,
-  dropdownItems: [
-    {
-      name: "Reiki Healing",
-      href: "/book-consultation/#reiki",
-    },
-    {
-      name: "Advanced & Psychic Healing",
-      href: "/book-consultation/#advanced-psychic",
-    },
-    {
-      name: "Crystal & Vibrational Healing",
-      href: "/book-consultation/#crystal",
-    },
-    {
-      name: "Spiritual & Angelic Healing",
-      href: "/book-consultation/#spiritual",
-    },
-    {
-      name: "Mind & Emotional Healing",
-      href: "/book-consultation/#mind",
-    },
-    {
-      name: "Akashic Records Healing",
-      href: "/book-consultation/#akashic",
-    },
-  ],
-  image: "/healing.webp",
-  description: "Holistic healing therapies for mind, body & soul",
-},
+  {
+    name: "Reiki & Energy Healing",
+    href: "/book-consultation",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        name: "Reiki Healing",
+        href: "/book-consultation/#reiki",
+      },
+      {
+        name: "Advanced & Psychic Healing",
+        href: "/book-consultation/#advanced-psychic",
+      },
+      {
+        name: "Crystal & Vibrational Healing",
+        href: "/book-consultation/#crystal",
+      },
+      {
+        name: "Spiritual & Angelic Healing",
+        href: "/book-consultation/#spiritual",
+      },
+      {
+        name: "Mind & Emotional Healing",
+        href: "/book-consultation/#mind",
+      },
+      {
+        name: "Akashic Records Healing",
+        href: "/book-consultation/#akashic",
+      },
+    ],
+    image: "/healing.webp",
+    description: "Holistic healing therapies for mind, body & soul",
+  },
   {
     name: "Healing Guide",
     href: "/healing-guide",
@@ -81,8 +87,7 @@ const navLinks = [
       },
     ],
     image: "/healing-guide.webp",
-    description:
-      "Understand our way of healing",
+    description: "Understand our way of healing",
   },
   {
     name: "Courses",
@@ -98,7 +103,7 @@ const navLinks = [
         href: "/courses/usui-reiki-level-2",
       },
       {
-        name: "Usui Reiki Master",
+        name: "Usui Reiki Master (3A & 3B)",
         href: "/courses/usui-reiki-master",
       },
       {
@@ -106,13 +111,24 @@ const navLinks = [
         href: "/courses/reiki-grand-mastership",
       },
       {
-        name: "Karuna Reiki",
+        name: "Karuna Reiki (Level 1 to Grandmaster)",
         href: "/courses/karuna-reiki",
       },
+
+      // ✅ Updated: Money Reiki (3 Levels)
       {
-        name: "Money Reiki",
-        href: "/courses/money-reiki",
+        name: "Money Reiki Level 1 – Practitioner",
+        href: "/courses/money-reiki-level-1",
       },
+      {
+        name: "Money Reiki Level 2 – Advanced / Distance",
+        href: "/courses/money-reiki-level-2",
+      },
+      {
+        name: "Money Reiki Level 3 – Master / Teacher",
+        href: "/courses/money-reiki-level-3",
+      },
+
       {
         name: "Angel Therapy",
         href: "/courses/angel-therapy",
@@ -356,19 +372,16 @@ export default function Navbar() {
             >
               <div className="space-y-1.5">
                 <span
-                  className={`block h-0.5 w-6 bg-purple-600 transition-all duration-300 ${
-                    open ? "rotate-45 translate-y-2" : ""
-                  }`}
+                  className={`block h-0.5 w-6 bg-purple-600 transition-all duration-300 ${open ? "rotate-45 translate-y-2" : ""
+                    }`}
                 ></span>
                 <span
-                  className={`block h-0.5 w-6 bg-purple-600 transition-all duration-300 ${
-                    open ? "opacity-0" : ""
-                  }`}
+                  className={`block h-0.5 w-6 bg-purple-600 transition-all duration-300 ${open ? "opacity-0" : ""
+                    }`}
                 ></span>
                 <span
-                  className={`block h-0.5 w-6 bg-purple-600 transition-all duration-300 ${
-                    open ? "-rotate-45 -translate-y-2" : ""
-                  }`}
+                  className={`block h-0.5 w-6 bg-purple-600 transition-all duration-300 ${open ? "-rotate-45 -translate-y-2" : ""
+                    }`}
                 ></span>
               </div>
             </button>
@@ -403,9 +416,8 @@ export default function Navbar() {
                           className="p-3 text-purple-600"
                         >
                           <svg
-                            className={`w-5 h-5 transition-transform duration-200 ${
-                              mobileDropdown === link.name ? "rotate-180" : ""
-                            }`}
+                            className={`w-5 h-5 transition-transform duration-200 ${mobileDropdown === link.name ? "rotate-180" : ""
+                              }`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
