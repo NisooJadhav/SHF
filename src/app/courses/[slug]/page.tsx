@@ -44,6 +44,7 @@ const courses: Course[] = [
       "How Reiki Works",
       "Five Reiki Principles (Precepts)",
       "Chakras – Introduction & Basic Understanding",
+      "Reiki Energy Channel Attunement",
       "Aura & Energy Body Basics",
       "Hand Positions for Self-Healing",
       "Step-by-Step Self-Healing Technique",
