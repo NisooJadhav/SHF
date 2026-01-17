@@ -21,6 +21,8 @@ export default function Footer() {
 
   const healingLinks = [
     { name: "Reiki Healing (In-Person & Distance)", href: "/book-consultation/#reiki" },
+    { name: "Money & Abundance Healing", href: "/book-consultation/#money-healing" },
+    { name: "Ancestral & Karmic Financial Healing", href: "/book-consultation/#money-healing" },
     { name: "Advanced & Psychic Healing", href: "/book-consultation/#advanced-psychic" },
     { name: "Crystal & Vibrational Healing", href: "/book-consultation/#crystal" },
     { name: "Spiritual & Angelic Healing", href: "/book-consultation/#spiritual" },
@@ -39,14 +41,14 @@ export default function Footer() {
   const coursesLinks = [
     { name: "Usui Reiki Level 1", href: "/courses/usui-reiki-level-1" },
     { name: "Usui Reiki Level 2", href: "/courses/usui-reiki-level-2" },
-    { name: "Usui Reiki Master (3A & 3B)", href: "/courses/usui-reiki-master" },
+    { name: "Usui Reiki Master", href: "/courses/usui-reiki-master" },
     { name: "Reiki Grand Mastership", href: "/courses/reiki-grand-mastership" },
-    { name: "Karuna Reiki (Level 1 to Grandmaster)", href: "/courses/karuna-reiki" },
+    { name: "Karuna Reiki", href: "/courses/karuna-reiki" },
 
     // ✅ Money Reiki (3 Levels)
-    { name: "Money Reiki Level 1 – Practitioner", href: "/courses/money-reiki-level-1" },
-    { name: "Money Reiki Level 2 – Advanced / Distance", href: "/courses/money-reiki-level-2" },
-    { name: "Money Reiki Level 3 – Master / Teacher", href: "/courses/money-reiki-level-3" },
+    { name: "Money Reiki Level 1", href: "/courses/money-reiki-level-1" },
+    { name: "Money Reiki Level 2", href: "/courses/money-reiki-level-2" },
+    { name: "Money Reiki Level 3", href: "/courses/money-reiki-level-3" },
 
     { name: "Angel Therapy", href: "/courses/angel-therapy" },
     { name: "Rider Waite Tarot Card", href: "/courses/rider-waite-tarot-card" },
@@ -67,6 +69,7 @@ export default function Footer() {
     { name: "Store", href: "/store" },
     // { name: "Book Consultation", href: whatsappLink, target: "_blank" },
     { name: "Book Consultation", href: "/#contact" },
+    { name: "Healing Guide", href: "/healing-guide" }
   ];
 
   return (
@@ -118,7 +121,6 @@ export default function Footer() {
           {[
             { title: "Reiki", links: reikiLinks },
             { title: "Book Consultation", links: healingLinks },
-            { title: "Healing Guide", links: healingGuideLinks },
             { title: "Courses", links: coursesLinks },
           ].map((section) => (
             <div key={section.title} className="basis-full sm:basis-1/2 lg:basis-[14%]">
